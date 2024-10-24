@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  
+  <!-- Tambahkan ini di dalam <head> di default.html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/markdown.css' | relative_url }}">
+  <meta name="description" content="{{ site.description }}">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <img src="{{ '/assets/images/logo.jpeg' | relative_url }}" alt="{{ site.title }} Logo" class="logo">
+    <h1 class="site-title">{{ site.title }}</h1>
+    <p class="site-description">{{ site.description }}</p>
+  </header>
+
+  <!-- Main Layout Wrapper -->
+  <div class="layout-wrapper">
+    
+    <!-- Main Menu Section -->
+    <aside class="main-menu">
+      <h2>Main Menu</h2>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="{{ '/articles/' | relative_url }}"><i class="fas fa-newspaper"></i> Articles</a></li>
+        <li><a href="{{ '/categories/' | relative_url }}"><i class="fas fa-th-list"></i> Categories</a></li>
+        <li><a href="{{ '/archives/' | relative_url }}"><i class="fas fa-archive"></i> Archives</a></li>
+        <li><a href="{{ '/tags/' | relative_url }}"><i class="fas fa-tags"></i> Tags</a></li>
+        <li><a href="{{ '/social/' | relative_url }}"><i class="fas fa-share-alt"></i> Social</a></li>
+        <li><a href="{{ '/about/' | relative_url }}"><i class="fas fa-user"></i> About</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content Section -->
+    <main class="content">
+      {{ content }}
+    </main>
+    
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; {{ site.title }} {{ "now" | date: "%Y" }}. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Gaya untuk konten artikel Markdown */
+.markdown-body {
+    background-color: #2a2a2a; /* Latar belakang konten */
+    padding: 30px; /* Jarak dalam konten */
+    border-radius: 12px; /* Sudut melengkung yang lebih besar */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Bayangan untuk efek kedalaman */
+    margin-bottom: 30px; /* Jarak bawah */
+}
+
+/* Gaya untuk judul postingan */
+.post-title {
+    color: #ffcc00; /* Warna untuk judul postingan */
+    font-size: 2.5rem; /* Ukuran font yang lebih besar untuk judul */
+    margin-bottom: 15px; /* Jarak bawah judul */
+    text-shadow: 2px 2px 8px rgba(255, 204, 0, 0.5); /* Efek bayangan pada judul */
+    border-bottom: 2px solid #ffcc00; /* Garis bawah judul */
+    padding-bottom: 10px; /* Jarak antara judul dan garis bawah */
+}
+
+/* Gaya untuk metadata postingan */
+.post-meta {
+    font-size: 0.95rem; /* Ukuran font lebih kecil untuk metadata */
+    color: #aaaaaa; /* Warna teks metadata lebih pucat */
+    margin-bottom: 25px; /* Jarak bawah metadata */
+    font-style: italic; /* Mencetak metadata miring */
+}
+
+/* Gaya untuk konten Markdown */
+.markdown-content {
+    line-height: 1.8; /* Jarak antar baris untuk keterbacaan */
+    color: #dddddd; /* Warna teks konten */
+}
+
+/* Gaya untuk judul di dalam konten */
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4 {
+    color: #ffcc00; /* Warna untuk judul konten */
+    margin-top: 25px; /* Jarak atas untuk judul */
+    border-bottom: 1px solid #444444; /* Garis bawah judul */
+    padding-bottom: 5px; /* Jarak antara judul dan garis bawah */
+}
+
+/* Gaya untuk paragraf di dalam konten */
+.markdown-content p {
+    margin-bottom: 20px; /* Jarak bawah untuk paragraf */
+    text-align: justify; /* Rata kanan-kiri untuk paragraf */
+}
+
+/* Gaya untuk daftar */
+.markdown-content ul,
+.markdown-content ol {
+    margin: 20px 0; /* Jarak vertikal untuk daftar */
+    padding-left: 30px; /* Jarak kiri untuk daftar */
+}
+
+/* Gaya untuk item daftar */
+.markdown-content li {
+    margin-bottom: 10px; /* Jarak antara item daftar */
+    position: relative; /* Posisi relatif untuk item daftar */
+}
+
+.markdown-content li::marker {
+    color: #ffcc00; /* Warna marker untuk daftar */
+}
+
+/* Gaya untuk link di dalam konten */
+.markdown-content a {
+    color: #ffcc00; /* Warna link */
+    text-decoration: none; /* Menghapus garis bawah */
+    transition: color 0.3s ease, transform 0.2s; /* Efek transisi */
+}
+
+.markdown-content a:hover {
+    color: #ffffff; /* Warna link saat hover */
+    text-decoration: underline; /* Garis bawah saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Gaya untuk gambar di dalam konten */
+.markdown-content img {
+    max-width: 100%; /* Gambar responsif */
+    border-radius: 12px; /* Sudut melengkung pada gambar */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Bayangan untuk efek kedalaman */
+    margin: 25px 0; /* Jarak vertikal untuk gambar */
+}
+
+/* Gaya untuk kutipan */
+.markdown-content blockquote {
+    background-color: rgba(255, 204, 0, 0.1); /* Latar belakang kutipan */
+    border-left: 4px solid #ffcc00; /* Garis kiri pada kutipan */
+    padding: 10px 20px; /* Jarak dalam kutipan */
+    color: #dddddd; /* Warna teks kutipan */
+    margin: 20px 0; /* Jarak vertikal untuk kutipan */
+    border-radius: 8px; /* Sudut melengkung untuk kutipan */
+}
+
+/* Gaya untuk tabel */
+.markdown-content table {
+    width: 100%; /* Lebar tabel penuh */
+    border-collapse: collapse; /* Menghilangkan celah antar border */
+    margin: 20px 0; /* Jarak vertikal untuk tabel */
+}
+
+.markdown-content th,
+.markdown-content td {
+    border: 1px solid #444444; /* Border untuk sel tabel */
+    padding: 10px; /* Jarak dalam sel tabel */
+    text-align: left; /* Rata kiri untuk teks di dalam sel */
+}
+
+.markdown-content th {
+    background-color: #1a1a1a; /* Latar belakang header tabel */
+    color: #ffcc00; /* Warna teks header tabel */
+}
+
+/* Gaya untuk footer di dalam konten */
+.markdown-content .footer {
+    margin-top: 30px; /* Jarak atas untuk footer */
+    border-top: 1px solid #444444; /* Garis atas footer */
+    padding-top: 10px; /* Jarak atas dalam footer */
+    color: #aaaaaa; /* Warna footer lebih pucat */
+}
+
+

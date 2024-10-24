@@ -1,0 +1,690 @@
+/* Reset CSS untuk menghapus margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+/* Body dan font dasar */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Latar belakang gelap */
+    color: #ffffff; /* Teks putih */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #3a3a3a, #1a1a1a);
+    border-bottom: 3px solid #ffcc00; /* Garis bawah header */
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%; /* Membuat logo berbentuk bulat */
+}
+
+.site-title {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    text-shadow: 1px 1px 5px rgba(255, 204, 0, 0.5); /* Efek bayangan pada judul */
+}
+
+.site-description {
+    font-size: 1.2rem;
+    color: #aaaaaa; /* Teks deskripsi lebih pucat */
+}
+
+/* Menambahkan jarak antara menu dan konten */
+.layout-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 5px; /* Jarak antara menu dan konten */
+}
+
+/* Gaya untuk menu utama */
+.main-menu {
+    background-color: #1a1a1a; /* Latar belakang menu */
+    padding: 20px; /* Jarak dalam menu */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Bayangan untuk menu */
+    max-width: 512px; /* Lebar maksimum menu */
+    margin: 0px auto; /* Rata tengah menu */
+}
+
+/* Judul menu */
+.main-menu h2 {
+    font-size: 1.5rem; /* Ukuran font untuk judul */
+    margin-bottom: 15px; /* Jarak bawah judul */
+    color: #ffcc00; /* Warna judul menu */
+    text-align: center; /* Rata tengah judul menu */
+}
+
+/* Gaya untuk daftar menu */
+.main-menu ul {
+    list-style: none; /* Menghapus gaya daftar default */
+    padding: 0; /* Menghapus padding */
+}
+
+/* Item menu */
+.main-menu li {
+    margin: 10px 0; /* Jarak antara item menu */
+}
+
+/* Gaya untuk link menu */
+.main-menu a {
+    display: flex; /* Menggunakan flexbox untuk align icon dan teks */
+    align-items: center; /* Rata tengah vertikal */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    color: #ffffff; /* Warna teks link */
+    padding: 10px; /* Jarak dalam link */
+    border-radius: 4px; /* Sudut melengkung pada link */
+    transition: background-color 0.3s ease, transform 0.2s; /* Efek transisi */
+}
+
+/* Efek saat hover pada link menu */
+.main-menu a:hover {
+    background-color: rgba(255, 204, 0, 0.1); /* Latar belakang saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Ikon dalam menu */
+.main-menu a i {
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+    font-size: 1.2rem; /* Ukuran ikon */
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .main-menu {
+        width: 100%; /* Menu mengambil lebar penuh di perangkat kecil */
+    }
+
+    .main-menu h2 {
+        font-size: 1.25rem; /* Ukuran font lebih kecil untuk judul di perangkat kecil */
+    }
+
+    .main-menu a {
+        font-size: 0.9rem; /* Ukuran font lebih kecil untuk link di perangkat kecil */
+    }
+}
+
+/* Konten Utama */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #2a2a2a; /* Latar belakang konten utama */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-left: 20px; /* Jarak antara menu dan konten */
+}
+
+h2, h3, h4 {
+    color: #ffcc00; /* Warna untuk judul konten */
+    margin-top: 20px; /* Jarak atas untuk judul */
+}
+
+p {
+    margin-bottom: 15px; /* Jarak bawah untuk paragraf */
+}
+
+/* Tambahan untuk tautan dan daftar konten */
+a {
+    color: #ffcc00; /* Warna tautan */
+}
+
+a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    margin-top: 20px;
+    border-top: 1px solid #444444; /* Garis atas footer */
+}
+
+footer p {
+    color: #aaaaaa; /* Teks footer lebih pucat */
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .layout-wrapper {
+        flex-direction: column; /* Ubah arah layout menjadi kolom */
+    }
+
+    .main-menu {
+        width: 100%; /* Lebar menu menjadi penuh */
+        margin-bottom: 20px; /* Jarak bawah menu */
+    }
+}
+
+/*
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+*/
+/* Artikel Halaman Konten */
+.page-content {
+    padding: 20px;
+    background-color: #2a2a2a; /* Latar belakang halaman konten */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Bayangan untuk efek kedalaman */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+/* Judul Artikel */
+.page-content h1 {
+    font-size: 2.5rem; /* Ukuran font untuk judul artikel */
+    color: #ffcc00; /* Warna judul */
+    margin-bottom: 10px; /* Jarak bawah */
+    text-shadow: 1px 1px 5px rgba(255, 204, 0, 0.5); /* Efek bayangan pada judul */
+}
+
+/* Sub-Judul Artikel */
+.page-content h2 {
+    font-size: 2rem; /* Ukuran font untuk sub-judul */
+    color: #ffcc00; /* Warna sub-judul */
+    margin-top: 20px; /* Jarak atas */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+/* Paragraf */
+.page-content p {
+    margin-bottom: 15px; /* Jarak bawah untuk paragraf */
+    color: #ffffff; /* Teks paragraf berwarna putih */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+/* Gambar */
+.page-content img {
+    max-width: 100%; /* Agar gambar responsif */
+    height: auto; /* Menjaga rasio gambar */
+    border-radius: 4px; /* Sudut melengkung pada gambar */
+    margin: 10px 0; /* Jarak atas dan bawah gambar */
+}
+
+/* Link */
+.page-content a {
+    color: #ffcc00; /* Warna link */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.page-content a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Daftar */
+.page-content ul {
+    margin-left: 20px; /* Jarak kiri untuk daftar */
+    color: #ffffff; /* Teks daftar berwarna putih */
+}
+
+.page-content li {
+    margin-bottom: 10px; /* Jarak bawah untuk item daftar */
+}
+
+/*
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+*/
+/* Gaya untuk halaman daftar artikel */
+.page-title {
+    text-align: center; /* Rata tengah untuk judul halaman */
+    color: #ffcc00; /* Warna untuk judul halaman */
+    font-size: 2.5rem; /* Ukuran font yang lebih besar untuk judul halaman */
+    margin-bottom: 30px; /* Jarak bawah untuk judul halaman */
+    text-shadow: 2px 2px 8px rgba(255, 204, 0, 0.5); /* Efek bayangan pada judul halaman */
+}
+
+/* Container untuk kartu artikel */
+.card-container {
+    display: grid; /* Menggunakan grid untuk tata letak kartu */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsif dengan kolom minimum 300px */
+    gap: 20px; /* Jarak antara kartu */
+    max-width: 1200px; /* Lebar maksimum untuk kontainer */
+    margin: 0 auto; /* Rata tengah kontainer */
+    padding: 0 20px; /* Padding samping */
+}
+
+/* Gaya untuk setiap kartu artikel */
+.card {
+    background-color: #2a2a2a; /* Latar belakang kartu */
+    border-radius: 12px; /* Sudut melengkung pada kartu */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Bayangan untuk efek kedalaman */
+    padding: 20px; /* Jarak dalam kartu */
+    transition: transform 0.3s ease; /* Efek transisi untuk transformasi */
+}
+
+/* Efek saat hover pada kartu */
+.card:hover {
+    transform: translateY(-5px); /* Efek angkat kartu saat hover */
+}
+
+/* Judul kartu */
+.card-title {
+    color: #ffcc00; /* Warna untuk judul kartu */
+    font-size: 1.8rem; /* Ukuran font untuk judul kartu */
+    margin-bottom: 10px; /* Jarak bawah untuk judul */
+}
+
+/* Gaya untuk tanggal publikasi */
+.post-date {
+    font-size: 0.95rem; /* Ukuran font untuk tanggal */
+    color: #aaaaaa; /* Warna teks untuk tanggal */
+    margin-bottom: 15px; /* Jarak bawah untuk tanggal */
+}
+
+/* Gaya untuk cuplikan artikel */
+.card-excerpt {
+    color: #dddddd; /* Warna untuk cuplikan artikel */
+    margin-bottom: 20px; /* Jarak bawah untuk cuplikan */
+    line-height: 1.6; /* Jarak antar baris untuk keterbacaan */
+}
+
+/* Gaya untuk tombol 'Baca Selengkapnya' */
+.read-more {
+    display: inline-block; /* Membuat tombol menjadi blok */
+    padding: 10px 20px; /* Jarak dalam tombol */
+    background-color: #000000; /* Latar belakang tombol */
+    color: #1a1a1a; /* Warna teks tombol */
+    border-radius: 5px; /* Sudut melengkung pada tombol */
+    text-decoration: none; /* Menghapus garis bawah */
+    transition: background-color 0.3s ease, transform 0.2s; /* Efek transisi untuk tombol */
+}
+
+/* Efek saat hover pada tombol */
+.read-more:hover {
+    background-color: #ffffff; /* Warna latar belakang saat hover */
+    color: #1a1a1a; /* Warna teks saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Ubah tata letak menjadi satu kolom pada perangkat kecil */
+    }
+}
+/*
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+*/
+/* Gaya untuk halaman daftar kategori */
+.page-title {
+    text-align: center; /* Rata tengah untuk judul halaman */
+    color: #ffcc00; /* Warna untuk judul halaman */
+    font-size: 2.5rem; /* Ukuran font yang lebih besar untuk judul halaman */
+    margin-bottom: 30px; /* Jarak bawah untuk judul halaman */
+    text-shadow: 2px 2px 8px rgba(255, 204, 0, 0.5); /* Efek bayangan pada judul halaman */
+}
+
+/* Daftar kategori */
+.category-list {
+    list-style: none; /* Menghapus gaya daftar default */
+    padding: 0; /* Menghapus padding */
+    max-width: 800px; /* Lebar maksimum untuk daftar kategori */
+    margin: 0 auto; /* Rata tengah daftar kategori */
+}
+
+/* Item kategori */
+.category-item {
+    background-color: #2a2a2a; /* Latar belakang untuk setiap kategori */
+    border-radius: 8px; /* Sudut melengkung */
+    margin-bottom: 20px; /* Jarak bawah antara kategori */
+    padding: 20px; /* Jarak dalam kategori */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Bayangan untuk efek kedalaman */
+}
+
+/* Judul kategori */
+.category-title {
+    color: #ffcc00; /* Warna untuk judul kategori */
+    font-size: 1.8rem; /* Ukuran font untuk judul kategori */
+    margin-bottom: 15px; /* Jarak bawah untuk judul kategori */
+}
+
+/* Daftar postingan dalam kategori */
+.post-list {
+    list-style: none; /* Menghapus gaya daftar default */
+    padding-left: 0; /* Menghapus padding */
+}
+
+/* Item postingan */
+.post-item {
+    margin: 10px 0; /* Jarak antara item postingan */
+}
+
+/* Gaya untuk link postingan */
+.post-link {
+    color: #ffffff; /* Warna teks link */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    font-size: 1.1rem; /* Ukuran font untuk link postingan */
+    transition: color 0.3s ease; /* Efek transisi pada perubahan warna */
+}
+
+/* Efek saat hover pada link postingan */
+.post-link:hover {
+    color: #ffcc00; /* Warna link saat hover */
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .category-item {
+        padding: 15px; /* Mengurangi padding pada perangkat kecil */
+    }
+
+    .category-title {
+        font-size: 1.5rem; /* Mengurangi ukuran font untuk judul kategori */
+    }
+
+    .post-link {
+        font-size: 1rem; /* Mengurangi ukuran font untuk link postingan */
+    }
+}
+/*
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+*/
+/* Gaya untuk halaman Social */
+.page-title {
+    text-align: center; /* Rata tengah untuk judul halaman */
+    color: #ffcc00; /* Warna untuk judul halaman */
+    font-size: 2.5rem; /* Ukuran font yang lebih besar untuk judul halaman */
+    margin-bottom: 20px; /* Jarak bawah untuk judul halaman */
+    text-shadow: 2px 2px 8px rgba(255, 204, 0, 0.5); /* Efek bayangan pada judul halaman */
+}
+
+/* Deskripsi sosial */
+.social-description {
+    text-align: center; /* Rata tengah untuk deskripsi */
+    color: #aaaaaa; /* Warna teks deskripsi */
+    font-size: 1.2rem; /* Ukuran font untuk deskripsi */
+    margin-bottom: 30px; /* Jarak bawah untuk deskripsi */
+}
+
+/* Kontainer untuk link sosial */
+.social-links {
+    max-width: 600px; /* Lebar maksimum untuk kontainer link */
+    margin: 0 auto; /* Rata tengah kontainer */
+}
+
+/* Daftar link sosial */
+.social-list {
+    list-style: none; /* Menghapus gaya daftar default */
+    padding: 0; /* Menghapus padding */
+}
+
+/* Item link sosial */
+.social-item {
+    margin: 10px 0; /* Jarak antara item link sosial */
+}
+
+/* Gaya untuk link sosial */
+.social-link {
+    display: flex; /* Menggunakan flexbox untuk align icon dan teks */
+    align-items: center; /* Rata tengah vertikal */
+    padding: 10px; /* Jarak dalam link */
+    color: #ffffff; /* Warna teks link */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    border-radius: 4px; /* Sudut melengkung pada link */
+    transition: background-color 0.3s ease, transform 0.2s; /* Efek transisi */
+}
+
+/* Efek saat hover pada link sosial */
+.social-link:hover {
+    background-color: rgba(255, 204, 0, 0.1); /* Latar belakang saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Ikon media sosial */
+.social-link i {
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+    font-size: 1.5rem; /* Ukuran ikon */
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem; /* Ukuran font yang lebih kecil untuk judul halaman di perangkat kecil */
+    }
+
+    .social-description {
+        font-size: 1rem; /* Ukuran font yang lebih kecil untuk deskripsi di perangkat kecil */
+    }
+
+    .social-link {
+        font-size: 1rem; /* Ukuran font untuk link sosial di perangkat kecil */
+    }
+}
+/*
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+*/
+/* Daftar Artikel */
+.article-list {
+    list-style: none; /* Menghilangkan bullet pada daftar */
+    padding: 0; /* Menghilangkan padding */
+}
+
+/* Item Artikel */
+.article-item {
+    background-color: #2a2a2a; /* Latar belakang item artikel */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 20px; /* Jarak dalam item artikel */
+    margin-bottom: 20px; /* Jarak bawah antara item artikel */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Bayangan untuk efek kedalaman */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+}
+
+.article-item:hover {
+    transform: translateY(-5px); /* Efek angkat saat hover */
+}
+
+/* Tautan Artikel */
+.article-link {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #ffcc00; /* Warna tautan */
+    font-size: 1.5rem; /* Ukuran font untuk tautan */
+    display: block; /* Memastikan tautan memenuhi ruang item */
+    margin-bottom: 10px; /* Jarak bawah tautan */
+    transition: color 0.3s ease; /* Transisi untuk perubahan warna */
+}
+
+.article-link:hover {
+    color: #ffffff; /* Warna saat hover */
+}
+
+/* Cuplikan Artikel */
+.article-excerpt {
+    color: #dddddd; /* Warna untuk cuplikan artikel */
+    margin-bottom: 10px; /* Jarak bawah untuk cuplikan */
+}
+
+/* Tanggal Artikel */
+.article-date {
+    font-size: 0.9rem; /* Ukuran font untuk tanggal */
+    color: #aaaaaa; /* Warna tanggal */
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px; /* Jarak atas untuk pagination */
+}
+
+.button {
+    background-color: #ffcc00; /* Warna tombol */
+    color: #121212; /* Teks tombol */
+    padding: 10px 15px; /* Jarak dalam tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut melengkung pada tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: background-color 0.3s ease; /* Transisi untuk perubahan warna */
+}
+
+.button:hover {
+    background-color: #ffffff; /* Warna tombol saat hover */
+    color: #121212; /* Warna teks tombol saat hover */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .article-item {
+        padding: 15px; /* Mengurangi padding di layar kecil */
+    }
+
+    .article-link {
+        font-size: 1.3rem; /* Mengurangi ukuran font tautan di layar kecil */
+    }
+}
+/*
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+*/
+/* Halaman Arsip */
+.archive-header {
+    text-align: center; /* Rata tengah untuk judul */
+    margin-bottom: 30px; /* Jarak bawah untuk judul */
+}
+
+.archive-header h1 {
+    font-size: 2.5rem; /* Ukuran font untuk judul arsip */
+    color: #ffcc00; /* Warna untuk judul arsip */
+    text-shadow: 1px 1px 5px rgba(255, 204, 0, 0.5); /* Efek bayangan pada judul */
+}
+
+/* Daftar Arsip */
+.archive-list {
+    list-style: none; /* Menghilangkan bullet pada daftar */
+    padding: 0; /* Menghilangkan padding */
+}
+
+/* Item Arsip */
+.archive-item {
+    background-color: #2a2a2a; /* Latar belakang item arsip */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 15px; /* Jarak dalam item arsip */
+    margin-bottom: 20px; /* Jarak bawah antara item arsip */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Bayangan untuk efek kedalaman */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+}
+
+.archive-item:hover {
+    transform: translateY(-5px); /* Efek angkat saat hover */
+}
+
+/* Tautan Arsip */
+.archive-link {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #ffcc00; /* Warna tautan */
+    font-size: 1.5rem; /* Ukuran font untuk tautan */
+    display: block; /* Memastikan tautan memenuhi ruang item */
+    margin-bottom: 10px; /* Jarak bawah tautan */
+    transition: color 0.3s ease; /* Transisi untuk perubahan warna */
+}
+
+.archive-link:hover {
+    color: #ffffff; /* Warna saat hover */
+}
+
+/* Tanggal Arsip */
+.archive-date {
+    font-size: 0.9rem; /* Ukuran font untuk tanggal */
+    color: #aaaaaa; /* Warna tanggal */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .archive-item {
+        padding: 15px; /* Mengurangi padding di layar kecil */
+    }
+
+    .archive-link {
+        font-size: 1.3rem; /* Mengurangi ukuran font tautan di layar kecil */
+    }
+}
+/*
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+*/
+/* Halaman Tags */
+.tag-header {
+    text-align: center; /* Rata tengah untuk judul */
+    margin-bottom: 30px; /* Jarak bawah untuk judul */
+}
+
+.tag-header h1 {
+    font-size: 2.5rem; /* Ukuran font untuk judul tags */
+    color: #ffcc00; /* Warna untuk judul tags */
+    text-shadow: 1px 1px 5px rgba(255, 204, 0, 0.5); /* Efek bayangan pada judul */
+}
+
+/* Daftar Tags */
+.tag-list {
+    list-style: none; /* Menghilangkan bullet pada daftar */
+    padding: 0; /* Menghilangkan padding */
+    display: flex; /* Menampilkan daftar dalam bentuk fleksibel */
+    flex-wrap: wrap; /* Memungkinkan item untuk melipat ke baris baru */
+    justify-content: center; /* Memusatkan daftar */
+}
+
+/* Item Tag */
+.tag-item {
+    background-color: #2a2a2a; /* Latar belakang item tag */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 10px 15px; /* Jarak dalam item tag */
+    margin: 10px; /* Jarak antar item tag */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Bayangan untuk efek kedalaman */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+}
+
+.tag-item:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Tautan Tag */
+.tag-link {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #ffcc00; /* Warna tautan */
+    font-size: 1rem; /* Ukuran font untuk tautan */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .tag-item {
+        flex: 1 1 100%; /* Membuat item tag memenuhi satu baris pada layar kecil */
+    }
+
+    .tag-link {
+        font-size: 1.2rem; /* Mengurangi ukuran font tautan di layar kecil */
+    }
+}

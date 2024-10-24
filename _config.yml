@@ -1,0 +1,62 @@
+# Informasi Situs
+title: "Masputrawae"
+description: "Tempat Penampungan Isi Fikiran Dan Hasrat Yang Terpendam"
+url: "" # Ganti dengan domain kamu atau localhost untuk pengujian lokal
+baseurl: "" # Pastikan tetap kosong jika situs berada di root domain (contoh: https://namadomain.com)
+
+# Informasi penulis
+author:
+  name: "Putra Jaya"
+  email: "masputrawae.official@gmail.com"
+  bio: "Tempat Menuliskan Kesedihan dan Renungan Hati. Canda Manis"
+
+# Output Format
+markdown: kramdown
+permalink: pretty
+highlighter: rouge
+
+
+# Paginasi
+paginate: 5 # Banyaknya postingan yang tampil per halaman
+paginate_path: "/page:num/" # URL untuk paginasi
+
+# Direktori
+collections:
+  pages:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/:categories/:title/"
+
+# Tema dan Layout
+theme: minima # Bisa diganti sesuai dengan tema yang kamu gunakan
+
+# Exclude atau Ignore
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Plugins yang digunakan
+plugins:
+  - jekyll-feed # Plugin untuk membuat RSS Feed
+  - jekyll-seo-tag # Plugin untuk SEO
+  - jekyll-paginate
+# Konfigurasi Build
+future: true
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Debug
+verbose: false

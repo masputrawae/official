@@ -1,0 +1,24 @@
+---
+layout: page
+title: My Blog
+---
+<h1 class="page-title">Home</h1>
+<ul class="article-list">
+    {% for post in paginator.posts %}
+      <li class="article-item">
+        <a href="{{ post.url | relative_url }}" class="article-link">{{ post.title }}</a>
+        <p class="article-excerpt">{{ post.excerpt | truncatewords: 10 }}</p>
+        <p class="article-date">{{ post.date | date: "%d %B %Y" }}</p> <!-- Tambahkan ini untuk menampilkan tanggal -->
+      </li>
+    {% endfor %}
+</ul>
+
+<div class="pagination" style="text-align: center; padding: 2rem;">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="button">Sebelumnya</a>
+    {% endif %}
+    <span>Halaman {{ paginator.page }} dari {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}" class="button">Selanjutnya</a>
+    {% endif %}
+</div>

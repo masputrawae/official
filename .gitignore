@@ -1,0 +1,53 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-metadata
+
+# Bundler
+vendor/
+Gemfile.lock
+
+# Cache
+.cache/
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE Files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Other
+*.swp
+*.swo
+
+# Gemfile dan Bundler
+.bundle
+Gemfile.lock
+
+# Cache Jekyll
+.jekyll-cache
+_site/
+
+# Temporary files
+*.tmp
+*.log
+
+# File dan direktori lainnya yang tidak ingin disertakan
+.DS_Store
+*.swp
+*.swo
+
+# Directory untuk drafts jika tidak ingin diikutkan
+_drafts/
+
+# File konfigurasi lokal
+config.ru
