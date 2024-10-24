@@ -10,6 +10,10 @@ tags:
   - rclone_config
   - sync
   - cloud_storage
+excerpt: rclone adalah sebuah alat baris perintah (command-line tool) yang digunakan untuk mengelola dan mentransfer data ke dan dari berbagai layanan penyimpanan cloud
+status: published
+thumbnail: 
+post: true
 ---
 # Installation Rclone Lengkap
 ## Apa Itu Rclone

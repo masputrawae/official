@@ -12,6 +12,10 @@ tags:
   - dasar_linux
   - belajar_linux
   - cli
+excerpt: Belajar perintah dasar linux, khusus pemula
+status: published
+thumbnail: 
+post: true
 ---
 # Perintah Dasar Linux
 #### 1. Navigasi File dan Direktori

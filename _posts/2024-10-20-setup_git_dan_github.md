@@ -13,6 +13,10 @@ tags:
   - pull
   - programming
   - development
+excerpt: Setup Git dan Github Lengkap mulai dari awal sampai akhir
+status: published
+thumbnail: 
+post: true
 ---
 # Setup Git Dan Github Lengkap 
 Pada Tanggal: Minggu, 20 Oktober 2024 pukul 13.15, saat hujan dan entah kenapa kepikiran untuk menulis ini, ya walaupun tidak niat tetapi aku tetap berusaha untuk menuliskan catatan berharga ini. 

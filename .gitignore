@@ -20,6 +20,8 @@ Thumbs.db
 *.temp
 
 # IDE Files
+.obsidian
+.tresh
 .idea/
 .vscode/
 *.sublime-workspace

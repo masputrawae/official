@@ -10,6 +10,10 @@ tags:
   - git_basic
   - pengenalan_git
   - version_control
+excerpt: Git adalah sistem kontrol versi (version control system) yang digunakan untuk melacak perubahan dalam kode atau file yang kita buat, terutama ketika bekerja dalam proyek pengembangan perangkat lunak.
+status: published
+thumbnail: 
+post: true
 ---
 # Apa itu git
 Git adalah **sistem kontrol versi (version control system)** yang digunakan untuk melacak perubahan dalam kode atau file yang kita buat, terutama ketika bekerja dalam proyek pengembangan perangkat lunak. Sistem ini memungkinkan kita dan tim kita untuk bekerja bersama-sama di proyek yang sama tanpa khawatir akan saling menimpa atau kehilangan perubahan yang dilakukan. Berikut penjelasan tentang Git secara lengkap:

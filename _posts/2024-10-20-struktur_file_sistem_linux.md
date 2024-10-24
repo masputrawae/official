@@ -10,6 +10,10 @@ tags:
   - belajar_linux
   - basic_linux
   - dasar_linux
+excerpt: Memahami struktur ini sangat penting bagi pengguna, terutama bagi mereka yang ingin mendalami penggunaan Linux secara lebih mendalam.
+status: published
+thumbnail: 
+post: true
 ---
 # Memahami Struktur Hierarki Sistem File Linux
 

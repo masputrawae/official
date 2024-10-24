@@ -10,6 +10,10 @@ tags:
   - github
   - open_source
   - belajar_github
+excerpt: GitHub adalah platform hosting untuk proyek-proyek yang menggunakan Git. GitHub menyediakan ruang untuk menyimpan repository Git secara online, sehingga pengembang di seluruh dunia bisa berkolaborasi, berbagi, dan mengelola kode secara bersama-sama
+status: published
+thumbnail: 
+post: true
 ---
 # Apa Itu Github
 GitHub adalah **platform hosting untuk proyek-proyek yang menggunakan Git**. GitHub menyediakan ruang untuk menyimpan repository Git secara online, sehingga pengembang di seluruh dunia bisa berkolaborasi, berbagi, dan mengelola kode secara bersama-sama. GitHub sangat populer di kalangan pengembang karena kemudahannya untuk bekerja sama dalam pengembangan proyek, terutama proyek open-source.

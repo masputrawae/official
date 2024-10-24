@@ -4,6 +4,7 @@ title: Petualangan Si Kucing Oren
 date: 2024-10-21
 categories:
   - Random
+  - Fiction
 tags:
   - kucing
   - superhero
@@ -11,8 +12,12 @@ tags:
   - lucu
   - kocak
   - cerita_kucing
+excerpt: Cerita lucu kucing oyen
+status: published
+thumbnail: 
+post: true
 ---
-**Petualangan Si Kucing yang Mau Jadi Superhero Tapi Takut Air**
+# **Petualangan Si Kucing yang Mau Jadi Superhero Tapi Takut Air**
 
 Di suatu hari yang cerah, ada seekor kucing bernama *Oyenman*. Ya, namanya begitu karena bulunya berwarna oranye, dan dia merasa sudah ditakdirkan menjadi superhero. "Aku *Oyenman*, kucing paling kuat di dunia!" teriaknya setiap pagi sambil berdiri di depan cermin. Dia pakai celana dalam merah di kepalanya, biar mirip superhero di komik-komik yang sering dibaca oleh majikannya.
 

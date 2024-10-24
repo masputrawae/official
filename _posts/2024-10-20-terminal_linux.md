@@ -10,6 +10,10 @@ tags:
   - basic_linux
   - dasar_linux
   - belajar_linux
+excerpt: Terminal linux adalah antarmuka berbasis teks yang memungkinkan pengguna untuk berinteraksi dengan sistem operasi Linux melalui perintah-perintah yang diketik
+status: published
+thumbnail: 
+post: true
 ---
 # Terminal Linux
 ## Apa itu Terminal Linux?

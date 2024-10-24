@@ -12,6 +12,10 @@ tags:
   - belajar_linux
   - cli
   - perintah_dasar
+excerpt: Tabel yang berisi 100 perintah Linux yang sering digunakan, beserta deskripsi singkatnya
+status: published
+thumbnail: 
+post: true
 ---
 # Top 100 Linux Command
 Berikut adalah tabel yang berisi 100 perintah Linux yang sering digunakan, beserta deskripsi singkatnya:

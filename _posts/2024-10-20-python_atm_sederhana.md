@@ -11,6 +11,10 @@ tags:
   - basic_pyton
   - belajar_python
   - atm_sederhana
+excerpt: Program python sederhana untuk belajar
+status: published
+thumbnail: 
+post: true
 ---
 # ✍️ Python: Membuat ATM Sederhana
 Pada Tanggal: Minggu, 19 Oktober 2024 pukul 20.10, aku sedang belajar python dan membuat sebuah program atm sederhana, ini adalah kodenya, siapa tahu ada yang sedang mencari contekan ☝️

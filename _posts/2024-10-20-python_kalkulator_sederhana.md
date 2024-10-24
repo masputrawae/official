@@ -2,7 +2,8 @@
 layout: post
 title: "Python: Kalkulator Sederhana"
 date: 2024-10-21
-categories: Python
+categories:
+  - Python
 tags:
   - python
   - programing
@@ -10,6 +11,10 @@ tags:
   - basic
   - basic_pyton
   - belajar_python
+excerpt: Program python sederhana untuk belajar
+status: published
+thumbnail: 
+post: true
 ---
 # ✍️ Python: Membuat Kalkulator Sederhana
 Pada Tanggal: Minggu, 20 Oktober 2024 pukul 15.10, aku sedang belajar python dan membuat sebuah program kalkulator sederhana, ini adalah kodenya, siapa tahu ada yang sedang mencari contekan ☝️
