@@ -1,0 +1,212 @@
+@use '../abstract/mixins' as m;
+
+.profile { // ======================= PROFILE
+    @include m.shadow();
+    min-height: 100dvb;
+    text-align: center;
+    margin-top: var(--size-1);
+    padding: var(--size-2);
+    border-radius: var(--size-1);
+
+    &__avatar {
+        @include m.width-height(250px, auto);
+        @include m.shadow();
+        border-radius: 50%;
+        border: var(--border-3) solid var(--cl-accent);
+    }
+
+    &__name {
+        font-size: 2rem;
+        font-family: var(--font-title);
+    }
+
+    &__username {
+        font-size: var(--fs-xl);
+        color: var(--cl-muted);
+    }
+
+    &__detail {
+        padding: var(--size-2) var(--size-1);
+    }
+
+    &__bio {
+        font-family: var(--font-article);
+        padding-bottom: var(--size-3);
+    }
+
+    &__follow {
+        color: var(--cl-muted);
+    }
+
+    &__social {
+        @include m.flex-justify(center, center);
+        margin-top: var(--size-3);
+        list-style: none;
+    }
+
+    &__social-item {
+        margin: var(--size-1);
+    }
+
+    &__social-link {
+        @include m.flex-justify(center, center);
+        @include m.width-height(40px, 40px);
+        background-color: var(--bg-alt);
+        color: var(--cl-accent);
+        font-size: var(--fs-4xl);
+        border-radius: 50%;
+
+        &:hover {
+            background-color: var(--bg-hover);
+            color: var(--cl-hover);
+        }
+
+        &:active {
+            background-color: var(--bg-active);
+            color: var(--cl-active);
+        }
+
+        &:focus-visible {
+            outline: none;
+            background-color: var(--bg-focus);
+            color: var(--cl-focus);
+        }
+    }
+
+    @include m.breakpoint(lg){ // ======================= PROFILE MEDIA QUERY
+        text-align: start;
+        display: flex;
+        align-items: center;
+        min-height: auto;
+        padding: var(--size-5);
+
+        &__avatar {
+            @include m.width-height(210px, 210px);
+            @include m.shadow();
+            border-radius: 50%;
+            border: var(--border-3) solid var(--cl-accent);
+        }
+
+        &__caption {
+            padding-left: var(--size-7);
+        }
+
+        &__social {
+            @include m.flex-justify(start, center);
+            margin-top: var(--size-3);
+            list-style: none;
+        }
+    }
+}
+
+.repo { // ======================= REPO
+    padding: var(--size-2);
+    border-radius: var(--size-1);
+
+    &__title {
+        font-family: var(--font-heading);
+        font-size: 1.9rem;
+    }
+
+    &__filter {
+        padding: var(--size-2) 0;
+        font-family: var(--font-base);
+        select {
+            color: var(--cl-text);
+            border-radius: var(--size-1);
+            background-color: var(--bg-alt);
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        @include m.shadow();
+        background-color: var(--bg-card);
+        padding: var(--size-3);
+        border: var(--border-1) solid var(--cl-border);
+        border-radius: var(--size-1);
+        margin: var(--size-5) 0;
+        max-height: 500px;
+    }
+    
+    &__name {
+        font-size: var(--fs-5xl);
+        font-weight: bold;
+        font-family: var(--font-heading);
+
+        &:hover {
+            color: var(--cl-hover);
+            text-decoration: underline;
+        }
+        &:active {color: var(--cl-active);}
+    }
+
+    &__description {
+        padding: var(--size-2) 0;
+        color: var(--cl-muted);
+        font-family: var(--font-article);
+        font-size: var(--fs-body);
+        line-height: var(--size-line-height);
+    }
+
+    &__lang {
+        @include m.shadow();
+        margin-top: var(--size-2);
+        display: inline-block;
+        border: var(--border-1) solid var(--cl-border);
+        padding: var(--size-1);
+        border-radius: var(--size-1);
+    }
+
+    &__date, &__action {
+        font-size: var(--fs-tiny);
+        line-height: var(--size-line-height);
+        font-weight: 500;
+    }
+
+    &__action a {
+        color: var(--cl-accent);
+        font-weight: 700;
+        text-decoration: underline;
+
+        &:hover {color: var(--cl-hover);}
+        &:active {color: var(--cl-active);}
+        &:focus-visible {
+            outline: none;
+            color: var(--cl-focus);
+        }
+    }
+
+    &__statistic {
+        @include m.flex-justify(center, center);
+        padding: var(--size-4) 0;
+        gap: var(--size-4);
+
+        p {
+            @include m.shadow();
+            font-size: var(--fs-sm);
+            border: var(--border-1) solid var(--cl-border);
+            padding: var(--size-2);
+            border-radius: var(--size-2);
+
+            span{
+                display: none;
+            }
+        }
+    }
+
+    @include m.breakpoint(lg){ // ======================= REPO MEDIA QUERY
+        padding: var(--size-5) var(--size-7);
+        &__statistic {
+            p {
+                span{
+                    padding-left: var(--size-3);
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

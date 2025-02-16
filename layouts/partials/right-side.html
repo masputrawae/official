@@ -1,0 +1,63 @@
+<aside class="sidebar sidebar--right">
+  <header class="sidebar__header">
+    <button class="btn btn--icon" id="rightClose">
+      <i class="bi bi-x"></i>
+    </button>
+    <span id="real-time-clock"></span>
+  </header>
+  
+  <nav class="nav nav--right-side">
+    {{- if .IsHome -}}
+      <div class="nav__container">
+        <strong class="nav__title">Pinned:</strong>
+        <ul class="nav__list">
+          {{- range where .Site.RegularPages "Params.pinned" true -}}
+            <li class="nav__item">
+              <a class="nav__link nav__link--color" href="{{ .RelPermalink }}">
+                <i class="bi bi-pin"></i>
+                <span>{{ .LinkTitle }}</span>
+              </a>
+            </li>
+          {{- end -}}
+        </ul>
+      </div>
+      <div class="nav__container">
+        <strong class="nav__title">Recent Post</strong>
+        <ul class="nav__list">
+          {{ range first 10 .Site.RegularPages.ByDate.Reverse }}
+            <li class="nav__item">
+              <a class="nav__link" href="{{ .RelPermalink }}">
+                <i class="bi bi-bell-fill"></i>
+                <span>{{ .Title }}</span>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <div class="nav__container">
+        <strong class="nav__title">Recently Updated</strong>
+        <ul class="nav__list">
+          {{ range first 10 .Site.RegularPages.ByLastmod.Reverse }}
+            <li class="nav__item">
+              <a class="nav__link" href="{{ .RelPermalink }}">
+                <i class="bi bi-clock-history"></i>
+                <span>{{ .Title }}</span>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{- else if .IsPage -}}
+      {{ $toc := .TableOfContents }}
+      {{ $toc := replaceRE `<ul>` `<ul class="nav__list nav__list--toc">` $toc }}
+      {{ $toc := replaceRE `<li>` `<li class="nav__item nav__item--toc">` $toc }}
+      {{ $toc := replaceRE `<a href=` `<a class="nav__link nav__link--toc" href=` $toc }}
+
+      <strong class="nav__title">On This Page</strong>
+      <div class="nav__toc nav__list--overflow" id="tableOfContents">
+        {{ $toc | safeHTML }}
+      </div>
+    {{- end -}}
+  </nav>
+</aside>

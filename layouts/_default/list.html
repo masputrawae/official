@@ -1,0 +1,21 @@
+{{- define "main" -}}
+<article class="markdown">
+  <header class="main-header">
+    <h1 class="content__title">{{- .Title -}}</h1>
+  </header>
+  
+  <article class="main-article">
+    {{- .Content | safeHTML -}}
+  </article>
+  
+  <nav>
+    <ul>
+      {{- range .Pages -}}
+      <li>
+        <a href="{{- .Permalink -}}">{{- .Title -}}</a>
+      </li>
+      {{- end -}}
+    </ul>
+  </nav>
+</article>
+{{- end -}}

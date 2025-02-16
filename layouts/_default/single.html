@@ -1,0 +1,52 @@
+{{- define "main" -}}
+<article class="markdown">
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  
+  <section>
+    {{- .Content | safeHTML -}}
+  </section>
+  
+  <nav>
+    <strong>Tags:</strong>
+    <ul class="list">
+      {{- with .Params.tags -}}
+      {{- range . -}}
+      <li class="content__nav-item">
+        <a class="content__nav-link" href="{{- "tags/" | relURL -}}{{- . | urlize -}}">{{- . -}}</a>
+      </li>
+      {{- end -}}
+      {{- end -}}
+    </ul>
+    
+    <strong>Categories:</strong>
+    <ul>
+      {{- with .Params.categories -}}
+      {{- range . -}}
+      <li>
+        <a href="{{- "categories/" | relURL -}}{{- . | urlize -}}">{{- . -}}</a>
+      </li>
+      {{- end -}}
+      {{- end -}}
+    </ul>
+  </nav>
+</article>
+{{ if .Params.mathjax }}
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],  // Inline math
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  // Block math
+    },
+    svg: {
+      fontCache: 'global' // Menggunakan cache untuk mempercepat rendering
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'], // Mencegah konflik dengan tag lain
+    }
+  };
+</script>
+<script async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+{{ end }}
+{{- end -}}

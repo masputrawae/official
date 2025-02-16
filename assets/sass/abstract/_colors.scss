@@ -1,0 +1,87 @@
+$themes: (
+    light: (
+        bg: (
+            base: #FFFFFF,
+            alt: #F8F9FA,
+            card: #EFF2F5,
+            hover: #E2E6EA,
+            focus: #BACBE6,
+            active: #0056B3
+        ),
+
+        cl: (
+            text: #212529,
+            accent: #0059de,
+            muted: #303030,
+            border: #b7bdc2,
+            hover: #0A58CA,
+            active: #084298,
+            focus: #74C0FC
+        ),
+
+        status: (
+            success: #2BAA66,
+            tips: #3CA6E0,
+            info: #227DC7,
+            warning: #8a5a00,
+            danger: #D0312D,
+            error: #B22222
+        ),
+
+        code: (
+            bg: #F4F4F4,
+            text: #2C3E50,
+            comment: #95A5A6,
+            keywoard: #D63384,
+            string: #26A269,
+            function: #0066CC,
+            operator: #F39C12,
+            number: #C0392B,
+            highlight-bg: #FFF3CD,
+            line-number: #ADB5BD
+        )
+    ),
+
+    dark: (
+        bg: (
+            base: #121212,
+            alt: #1A1A1A,
+            card: #202020,
+            hover: #2D2D2D,
+            focus: #375A7F,
+            active: #1E90FF
+        ),
+
+        cl: (
+            text: #EDEDED,
+            accent: #5AA9E6,
+            muted: #A0A0A0,
+            border: #44474A,
+            hover: #66B2FF,
+            active: #3A7DB7,
+            focus: #A3DAFF
+        ),
+
+        status: (
+            success: #23D18B,
+            tips: #1F92D1,
+            info: #0078D4,
+            warning: #F0AD4E,
+            danger: #D9534F,
+            error: #ff2a40
+        ),
+
+        code: (
+            bg: #1E1E1E,
+            text: #DADADA,
+            comment: #757575,
+            keywoard: #FF79C6,
+            string: #50FA7B,
+            function: #61AFEF,
+            operator: #F3A712,
+            number: #C678DD,
+            highlight-bg: #44475A,
+            line-number: #8892BF
+        )
+    ),
+);

@@ -1,0 +1,48 @@
+@use '../abstract/mixins' as m;
+
+// SEARCH
+.search {
+    &__form {
+        @include m.flex-justify(space-between, center);
+        margin: var(--size-2);
+        gap: var(--size-2);
+    }
+
+    &__input {
+        @include m.shadow;
+        @include m.width-height(100%, 3rem);
+        padding: 0 var(--size-2);
+        background: var(--bg-default);
+        border: var(--border-1) solid var(--cl-border);
+        border-radius: var(--size-1);
+        color: var(--cl-text);
+
+        &:hover {
+            border-color: var(--link-hover);
+        }
+
+        &:focus {
+            border-color: var(--cl-accent);
+            outline: none;
+            background: var(--bg-alt);
+        }
+    }
+}
+
+.result {
+    margin-top: var(--size-3);
+    margin-bottom: var(--size-3);
+
+    &__card{
+        @include m.shadow;
+        border: var(--border-1) solid var(--cl-border);
+        border-radius: var(--size-1);
+        background-color: var(--bg-card);
+        padding: var(--size-2);
+        
+        
+        a {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+{{- define "main" -}}
+{{ with site.Data.profile }}
+  <figure class="profile">
+    <img class="profile__avatar" src="{{ .avatar_url | safeURL }}" alt="{{ .name | default "Unknown User" }}" >
+    
+    <figcaption class="profile__caption">
+      <h1 class="profile__name">{{ .name | default "No Name" }}</h1>
+      <p class="profile__username">{{ .login | default "No Username" }}</p>
+      <div class="profile__detail">
+        <p class="profile__bio">{{ .bio | default "No bio available." }}</p>
+        <p class="profile__follow">
+          <i class="bi bi-people-fill"></i>
+          <span>Followers: {{ .followers | default 0 }}</span>
+          <i class="bi bi-people-fill"></i>
+          <span>Following: {{ .following | default 0 }}</span>
+        </p>
+      </div>
+      <ul class="profile__social">
+        {{ range site.Params.socialMedia }}
+          <li class="profile__social-item">
+            <a 
+            aria-label="{{ printf "Go to %s" .social | safeHTMLAttr }}"
+            title="{{ printf "Go to %s" .social | safeHTMLAttr }}"
+            class="profile__social-link" 
+            href="{{ .url | safeURL }}" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            >
+              <i class="bi {{ .icon }}"></i>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </figcaption>
+  </figure>
+{{ end }}
+
+
+{{ with site.Data.repos }}
+    {{ $repos := . }}
+    <div class="repo">
+      <h2 class="repo__title">Repositories ({{ len $repos | default 0 }})</h2>
+      <ul class="repo__list">
+        {{ range sort $repos "updated_at" "desc" }}
+          <li class="repo__item" data-lang="{{ .language | default "Unknown" }}">
+            <a class="repo__name" href="{{ .html_url | safeURL }}" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github"></i> {{ .name }}
+            </a>
+            <div class="repo__description">
+              <p>{{ .description | default "No description available" }}</p>
+              <p class="repo__lang"><i class="bi bi-code-slash"></i> Language: {{ .language | default "Unknown" }}</p>
+            </div>
+            <div class="repo__date">
+              <p><i class="bi bi-calendar"></i> Created: {{ .created_at | dateFormat "Jan 02, 2006" }}</p>
+              <p><i class="bi bi-arrow-repeat"></i> Last Updated: {{ .updated_at | dateFormat "Jan 02, 2006" }}</p>
+            </div>
+            <div class="repo__action">
+              <p><i class="bi bi-bug"></i> Issues: <a href="{{ .html_url }}/issues" target="_blank" rel="noopener noreferrer">View</a></p>
+              <p><i class="bi bi-download"></i> Pull Requests: <a href="{{ .html_url }}/pulls" target="_blank" rel="noopener noreferrer">View</a></p>
+            </div>
+            <div class="repo__statistic">
+              <p><i class="bi bi-star-fill"></i><span>Star:</span> {{ .stargazers_count | default 0 }}</p>
+              <p><i class="bi bi-git"></i> <span>Forks:</span> {{ .forks_count | default 0 }}</p>
+              <p><i class="bi bi-eye"></i> <span>Watchers:</span> {{ .watchers_count | default 0 }}</p>
+              <p><i class="bi bi-exclamation-circle"></i><span>Open Issues:</span> {{ .open_issues_count | default 0 }}</p>
+            </div>
+            <div class="repo__clone">
+              <p><i class="bi bi-terminal"></i> Clone Repo:</p>
+              <div class="highlight" data-lang="bash">
+                <pre class="chroma">{{ printf "git clone %s.git" .html_url | safeHTML }}</pre>
+              </div>
+            </div>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+{{- end -}}

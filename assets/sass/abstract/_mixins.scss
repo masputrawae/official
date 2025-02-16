@@ -1,0 +1,63 @@
+// ===================  BREAKPOINT
+$sm: 576px;
+$md: 768px;
+$lg: 1200px;
+
+@mixin breakpoint($size) {
+    @if $size == xs {
+        @media (min-width: $xs) { @content; }
+    }
+    @else if $size == sm {
+        @media (min-width: $sm) { @content; }
+    }
+    @else if $size == md {
+        @media (min-width: $md) { @content; }
+    }
+    @else if $size == lg {
+        @media (min-width: $lg) { @content; }
+    }
+    @else {
+        @warn "Breakpoint '#{$size}' is not defined!";
+    }
+}
+
+// ===================  FLEX JUSTIFY
+@mixin flex-justify($justify: space-between, $align-items: center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align-items;
+}
+
+// ===================  STICKY TOP
+@mixin sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+// ===================  WIDTH HEIGHT
+@mixin width-height($width, $height){
+    width: $width;
+    height: $height;
+}
+
+// ===================  ELLIPSIS
+@mixin ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// ===================  ALIGN CENTER
+@mixin align-center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+// ==================== SHADOW
+@mixin shadow {
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.1), 
+        inset 0 2px 4px rgba(0, 0, 0, 0.02);
+}

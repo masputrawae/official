@@ -1,0 +1,80 @@
+#=================================BASE
+baseURL: "https://masputrawae.github.io/official/"
+languageCode: "id"
+title: "MPw Official"
+
+#=================================PARAMS
+Params:
+  description: "Deskripsikan tentang dirimu di sini. sesuai keinginanmu!!"
+  bio: "Laboris laborum ullamco ullamco do mollit ad incididunt Lorem qui dolor ipsum Lorem deserunt."
+  keywords: "hugo, markdown, blog, contoh"
+  author: "Putra Jaya"
+  username: "masputrawae"
+  avatar: "images/android-chrome-512x512.png"
+
+  socialMedia:
+    - social: "facebook"
+      url: "https://facebook.com/example.com"
+      icon: "bi-facebook"
+
+    - social: "twitter"
+      url: "https://twitter.com/example"
+      icon: "bi-twitter"
+
+    - social: "instagram"
+      url: "https://instagram.com/example"
+      icon: "bi-instagram"
+
+    - social: "discord"
+      url: "https://discord.com/in/example"
+      icon: "bi-discord"
+
+    - social: "github"
+      url: "https://github.com/example"
+      icon: "bi-github"
+
+#=================================SETTING
+paginate: 4
+enableRobotsTXT: true
+pluralizeListTitles: false
+
+sitemap:
+  changefreq: "weekly"
+  priority: 0.5
+  filename: "sitemap.xml"
+
+mediaTypes:
+  "application/json":
+    suffixes: ["json"]
+
+outputFormats:
+  manifest:
+    mediaType: "application/json"
+    baseName: "manifest"
+    isPlainText: true
+    notAlternative: true
+  search:
+    mediaType: "application/json"
+    baseName: "search"
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home: ["HTML", "manifest", "search"]
+
+markup:
+  tableOfContents:
+    endLevel: 6
+    ordered: false
+    startLevel: 2
+
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    style: "github-dark"
+    noClasses: false
+    lineNumbersInTable: false
+
+  goldmark:
+    renderer:
+      unsafe: true

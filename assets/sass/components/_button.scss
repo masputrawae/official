@@ -1,0 +1,48 @@
+@use '../abstract/mixins' as m;
+
+.btn {
+    color: var(--cl-text);
+    font-family: var(--font-title);
+    @include m.shadow();
+
+    &--icon {
+        @include m.width-height(40px, 40px);
+        border-radius: var(--size-1);
+    }
+
+    &--nav {
+        padding: var(--size-1) var(--size-2);
+        font-size: var(--fs-xl);
+        text-align: start;
+        width: 100%;
+        color: var(--cl-active);
+        background-color: var(--bg-alt);
+        margin-top: var(--size-1);
+        border-radius: var(--size-1);
+    }
+
+    &:hover {
+        background-color: var(--bg-hover);
+        color: var(--cl-hover);
+    }
+
+    &:active {
+        background-color: var(--bg-active);
+        color: var(--cl-active);
+    }
+
+    &:focus-visible {
+        background-color: var(--bg-focus);
+        color: var(--cl-focus);
+        outline: none;
+    }
+
+    &--offcanvas {
+        font-size: var(--fs-7xl);
+        box-shadow: none;
+
+        &:hover, &:focus, &:active{
+            background: none;
+        }
+    }
+}

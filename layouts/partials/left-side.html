@@ -1,0 +1,54 @@
+<aside class="sidebar sidebar--left">
+  <header class="sidebar__header">
+    <a class="sidebar__title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <div class="sidebar__actions">
+
+      <button 
+      class="btn btn--icon" 
+      title="Go to Search Pages"
+      aria-label="Go to Search Pages" 
+      onclick="window.location.href='{{ "search/" | relURL }}'">
+        <i class="bi bi-search"></i>
+      </button>
+
+      <button 
+      class="btn btn--icon" 
+      title="Go to Home" 
+      aria-label="Go to Home" 
+      onclick="window.location.href='{{ .Site.BaseURL }}'">
+        <i class="bi bi-house"></i>
+      </button>
+
+      <button 
+      class="btn btn--icon" 
+      id="switchTheme" 
+      title="Switch themes Dark/Light"
+      aria-label="Switch themes Dark/Light">
+        <i class="bi bi-moon"></i>
+      </button>
+
+      <button 
+      class="btn btn--icon" 
+      id="leftClose" 
+      title="Close Sidebar Left"
+      aria-label="Close Sidebar Left" 
+      >
+        <i class="bi bi-x"></i>
+      </button>
+      
+    </div>
+  </header>
+  
+  <nav class="nav">
+    <button 
+    aria-label="Root"
+    class="btn btn--nav" 
+    id="toggleCollapseAll">
+      <i class="bi bi-folder2"></i>
+      <span>Root</span>
+    </button>
+    <ul class="nav__list">
+      {{- template "collapsible_nav" .Site.Home -}}
+    </ul>
+  </nav>
+</aside>

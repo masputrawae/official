@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}" data-theme="dark">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="layout">
+  {{ partial "left-side.html" . }}
+  <div class="layout__main">
+    {{ partial "header.html" . }}
+    <main>{{ block "main" . }}{{ end }}</main>
+    {{ partial "footer.html" . }}
+  </div>
+  {{ partial "right-side.html" . }}
+</body>
+</html>
