@@ -31,6 +31,10 @@
       {{- end -}}
     </ul>
   </nav>
+
+  <div>
+    {{ partial "giscus.html" . }}
+  </div>
 </article>
 {{ if .Params.mathjax }}
 <script>

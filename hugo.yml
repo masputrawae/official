@@ -39,7 +39,7 @@ enableRobotsTXT: true
 pluralizeListTitles: false
 
 sitemap:
-  changefreq: "weekly"
+  changefreq: "daily"
   priority: 0.5
   filename: "sitemap.xml"
 

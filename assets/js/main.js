@@ -31,11 +31,27 @@ document.addEventListener("DOMContentLoaded", () => {
             theme === "dark" ? "bi-moon" : "bi-sun"
         );
         sessionStorage.setItem("theme", theme);
+
+        // 🔄 Kirim perubahan tema ke Giscus
+        sendMessageToGiscus(theme);
     };
 
+    // 🔄 Kirim pesan ke Giscus untuk mengubah tema
+    const sendMessageToGiscus = (theme) => {
+        const iframe = document.querySelector("iframe.giscus-frame");
+        if (iframe) {
+            iframe.contentWindow.postMessage(
+                { giscus: { setConfig: { theme } } },
+                "https://giscus.app"
+            );
+        }
+    };
+
+    // 🔄 Terapkan tema saat halaman dimuat
     applyTheme(sessionStorage.getItem("theme") || 
         (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
 
+    // 🔄 Event listener untuk mengubah tema
     switchTheme?.addEventListener("click", () => {
         applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
     });

@@ -7,10 +7,6 @@
     &--right-side {
         display: flex;
         flex-direction: column;
-
-        .nav__list {
-            padding: var(--size-5);
-        }
     }
 
     &__container {
@@ -28,6 +24,10 @@
         list-style: none;
         position: relative;
         padding-left: var(--size-2);
+
+        &--custom {
+            padding: var(--size-5);
+        }
     }
 
     &__list .nav__list {

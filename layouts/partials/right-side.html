@@ -10,7 +10,7 @@
     {{- if .IsHome -}}
       <div class="nav__container">
         <strong class="nav__title">Pinned:</strong>
-        <ul class="nav__list">
+        <ul class="nav__list nav__list--custom">
           {{- range where .Site.RegularPages "Params.pinned" true -}}
             <li class="nav__item">
               <a class="nav__link nav__link--color" href="{{ .RelPermalink }}">
@@ -23,7 +23,7 @@
       </div>
       <div class="nav__container">
         <strong class="nav__title">Recent Post</strong>
-        <ul class="nav__list">
+        <ul class="nav__list nav__list--custom">
           {{ range first 10 .Site.RegularPages.ByDate.Reverse }}
             <li class="nav__item">
               <a class="nav__link" href="{{ .RelPermalink }}">
@@ -37,7 +37,7 @@
 
       <div class="nav__container">
         <strong class="nav__title">Recently Updated</strong>
-        <ul class="nav__list">
+        <ul class="nav__list nav__list--custom">
           {{ range first 10 .Site.RegularPages.ByLastmod.Reverse }}
             <li class="nav__item">
               <a class="nav__link" href="{{ .RelPermalink }}">
