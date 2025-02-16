@@ -1,24 +1,26 @@
 ---
-title: Top 100 Linux Command
-description: tabel yang berisi 100 perintah linux yang sering digunakan, beserta penjelasannya.
-excerpt: Berikut adalah tabel yang berisi 100 perintah Linux yang sering digunakan, beserta deskripsi singkatnya
-date: 2024-11-10
+title: "Top 100 Linux Command"
+date: 2024-11-10T23:43:42+07:00
+last_modified: 2024-11-10T23:43:42+07:00
+description: "tabel yang berisi 100 perintah linux yang sering digunakan, beserta penjelasannya."
+excerpt: "Berikut adalah tabel yang berisi 100 perintah Linux yang sering digunakan, beserta deskripsi singkatnya"
 categories:
   - Linux
 tags:
   - linux
   - cli
   - terminal
-  - cheat-sheet
-  - basic-command
+  - cheat_sheet
+  - basic_command
   - basic_linux
   - belajar_linux
   - dasar_linux
   - linux_command
-last_modified_at: 2024-11-10
-author:
+thumbnail: 
+pinned: true
+draft: false
+mathjax: false
 ---
-# Top 100 Linux Command
 Berikut adalah tabel yang berisi 100 perintah Linux yang sering digunakan, beserta deskripsi singkatnya:
 
 | No  | Command               | Description                                                |

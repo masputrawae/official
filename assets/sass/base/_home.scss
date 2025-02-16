@@ -9,7 +9,7 @@
     border-radius: var(--size-1);
 
     &__avatar {
-        @include m.width-height(250px, auto);
+        @include m.width-height(200px, 200px);
         @include m.shadow();
         border-radius: 50%;
         border: var(--border-3) solid var(--cl-accent);

@@ -1,12 +1,14 @@
 ---
-title: Cara Install MySQL di Ubuntu
-description: Panduan langkah-langkah untuk menginstal dan mengamankan MySQL di Ubuntu.
-excerpt: MySQL adalah sistem manajemen basis data (DBMS) yang bersifat open-source dan digunakan untuk menyimpan dan mengelola data dalam aplikasi web. MySQL menggunakan bahasa SQL (Structured Query Language) untuk mengakses, mengubah, dan mengelola data.
-date: 2024-11-18
+title: "Cara Install MySQL di Ubuntu"
+date: 2024-11-18T23:43:42+07:00
+last_modified: 2024-11-18T23:43:42+07:00
+description: "Panduan langkah-langkah untuk menginstal dan mengamankan MySQL di Ubuntu."
+excerpt: "MySQL adalah sistem manajemen basis data (DBMS) yang bersifat open-source dan digunakan untuk menyimpan dan mengelola data dalam aplikasi web. MySQL menggunakan bahasa SQL (Structured Query Language) untuk mengakses, mengubah, dan mengelola data."
 categories:
   - Server
   - Database
   - Linux
+  - MySQL
 tags:
   - mysql
   - ubuntu
@@ -14,18 +16,19 @@ tags:
   - database
   - server
   - tutorial
-last_modified_at: 2024-11-18
-author: Putra Jaya
+thumbnail: 
+pinned: false
+draft: false
+mathjax: false
 ---
-# Langkah-langkah Install MySQL di Ubuntu
 MySQL adalah sistem manajemen basis data (DBMS) yang bersifat open-source dan digunakan untuk menyimpan dan mengelola data dalam aplikasi web. MySQL menggunakan bahasa SQL (Structured Query Language) untuk mengakses, mengubah, dan mengelola data. Biasanya digunakan bersama PHP dalam aplikasi web dinamis, seperti sistem manajemen konten (CMS) dan aplikasi berbasis data lainnya. MySQL dikenal karena kecepatan, reliabilitas, dan kemampuannya menangani jumlah data yang besar.
-#### Langkah 1: Install MySQL
+## Langkah 1: Install MySQL
 Masukkan perintah berikut untuk install MySQL:
 ```bash
 sudo apt install mysql-server
 ```
 Ini akan menginstall MySQL server di sistem kamu. Biasanya nggak butuh waktu lama, jadi tunggu sampai selesai, ya.
-#### Langkah 2: Amankan Instalasi MySQL
+## Langkah 2: Amankan Instalasi MySQL
 MySQL menyediakan cara cepat untuk meningkatkan keamanan. Jalankan perintah berikut:
 ```bash
 sudo mysql_secure_installation
@@ -33,7 +36,7 @@ sudo mysql_secure_installation
 Saat proses ini berjalan, kamu akan ditanya beberapa pertanyaan keamanan:
 - **Setel Password untuk User Root MySQL**: Ini penting buat amankan akses root di MySQL. Kalau diminta buat password, setel password baru sesuai keinginan.
 - **Pertanyaan Keamanan Lainnya**: Kamu akan diminta untuk menghapus user anonim, menonaktifkan login root jarak jauh, menghapus database testing, dan reload privilege tables. Kamu bisa ketik `Y` (Yes) untuk semua pertanyaan ini.
-##### VALIDATE PASSWORD COMPONENT
+### VALIDATE PASSWORD COMPONENT
 ```bash
 Securing the MySQL server deployment. Connecting to MySQL using a blank password. VALIDATE PASSWORD COMPONENT can be used to test passwords and improve security. It checks the strength of password and allows the users to set only those passwords which are secure enough. Would you like to setup VALIDATE PASSWORD component? Press y|Y for Yes, any other key for No:
 ```
@@ -44,28 +47,28 @@ Oke, di bagian ini MySQL menawarkan fitur **VALIDATE PASSWORD COMPONENT** yang a
 - **Kalau kamu pilih `No`**, password tetap bisa dibuat tanpa aturan khusus ini. Tapi kalau cuma untuk latihan atau pengembangan di lokal, kamu bisa pilih `No` agar password lebih fleksibel.
 
 Silakan pilih sesuai kebutuhanmu. Kalau cuma untuk belajar di lokal, pilihan "No" aman kok. 😊
-##### menghapus user anonim
+### menghapus user anonim
 ```bash
 Skipping password set for root as authentication with auth_socket is used by default. If you would like to use password authentication instead, this can be done with the "ALTER_USER" command. See https://dev.mysql.com/doc/refman/8.0/en/alter-user.html#alter-user-password-management for more information. By default, a MySQL installation has an anonymous user, allowing anyone to log into MySQL without having to have a user account created for them. This is intended only for testing, and to make the installation go a bit smoother. You should remove them before moving into a production environment. Remove anonymous users? (Press y|Y for Yes, any other key for No) :
 ```
 Bagian ini menawarkan untuk **menghapus user anonim** di MySQL. User anonim memungkinkan siapa saja untuk mengakses MySQL tanpa login, yang kurang aman jika server ini nantinya digunakan di lingkungan yang lebih publik atau produksi.
 
 Untuk pengaturan yang lebih aman (meskipun di lokal), disarankan pilih `Y` (Yes) agar akses MySQL lebih terbatas hanya untuk user terdaftar. Jadi, tekan `Y` untuk menghapus pengguna anonim ini, terutama kalau kamu berencana menggunakan database ini secara serius atau belajar dengan konfigurasi yang mirip produksi. 😊
-##### Untuk keamanan
+### Untuk keamanan
 ```bash
 Normally, root should only be allowed to connect from 'localhost'. This ensures that someone cannot guess at the root password from the network. Disallow root login remotely? (Press y|Y for Yes, any other key for No) :
 ```
 Untuk keamanan, disarankan pilih `Y` (Yes) di sini agar **root hanya bisa login dari `localhost`**. Artinya, akun root MySQL hanya bisa diakses langsung dari komputer tempat MySQL diinstall (yaitu komputer kamu) dan nggak bisa diakses dari jaringan luar.
 
 Ini penting untuk mencegah percobaan login dari jaringan luar, yang lebih aman untuk pemakaian di lokal dan terutama kalau suatu saat kamu konek ke jaringan yang lebih luas. Jadi, **tekan `Y` untuk memilih Yes** di bagian ini. 😊
-##### Menghapus Database test
+### Menghapus Database test
 ```bash
 Remove test database and access to it? (Press y|Y for Yes, any other key for No) :
 ```
 Yes, pilih `Y` (Yes) di sini juga. Database *test* ini hanya digunakan untuk keperluan testing, dan secara default terbuka untuk semua pengguna. Jadi, lebih aman untuk dihapus agar nggak ada akses yang nggak sengaja ke database ini nantinya.
 
 Tekan `Y` aja untuk melanjutkan, dan kita hampir selesai dengan setup keamanannya! 😊
-##### Reload privilege tables
+### Reload privilege tables
 ```bash
 Reload privilege tables now? (Press y|Y for Yes, any other key for No) :
 ```
@@ -74,7 +77,7 @@ Yes, tekan `Y` di sini untuk *reload privilege tables*. Ini akan memastikan bahw
 Dengan ini, semua setting keamanan yang kita pilih akan aktif tanpa perlu restart MySQL lagi. Setelah ini, setup keamanan MySQL selesai! 🎉😊
 
 ---
-#### Langkah 3: Cek Status MySQL
+## Langkah 3: Cek Status MySQL
 Setelah proses keamanan selesai, cek apakah MySQL sudah aktif dan berjalan:
 ```bash
 sudo systemctl status mysql
@@ -94,7 +97,7 @@ Harusnya tampil `active (running)`, yang artinya MySQL sudah berhasil terinstall
              └─19816 /usr/sbin/mysqld
 ```
 
-#### Langkah 4: Masuk ke MySQL (Opsional, Buat Tes)
+## Langkah 4: Masuk ke MySQL (Opsional, Buat Tes)
 Coba login ke MySQL untuk pastikan semuanya berjalan lancar:
 ```bash
 sudo mysql -u root -p

@@ -1,10 +1,14 @@
 ---
-title: Trik Kode Kecil | Mata Emoji yang Menatap Kamu!
+title: Mata Emoji yang Menatap Kamu!
+date: 2024-11-15T23:43:42+07:00
+last_modified: 2024-11-15T23:43:42+07:00
 description: Pelajari cara membuat emoji sederhana yang matanya mengikuti kursor kamu dengan kode HTML, CSS, dan JavaScript. Kode ini mudah dipahami dan cocok untuk menambah elemen interaktif di halaman webmu. Yuk, coba dan buat tampilan website kamu jadi lebih seru!
 excerpt: "Hai 😊 Teman! Kali ini aku mau berbagi code sederhana yang bikin tampilan website jadi lebih seru | emoji yang matanya bisa mengikuti kursor kamu! Lucu banget kan? Kalau kamu tertarik, bisa langsung copy-paste source code-nya di bawah. Tapi peringatan: ini untuk seru-seruan ya, jadi kalau kamu sudah jago koding, lebih seru bikin sendiri! 😁"
-date: 2024-11-15
 categories:
   - Web Development
+  - Javascript
+  - CSS
+  - HTML
 tags:
   - web_animation
   - web_development
@@ -13,9 +17,12 @@ tags:
   - javascript
   - tips_trick_keren
   - coding
-last_modified_at: 2024-11-17
-author: Putra Jaya
+thumbnail: 
+pinned: false
+draft: false
+mathjax: false
 ---
+
 <style>
 .kepala {
   width: 50px;
@@ -95,10 +102,8 @@ document.addEventListener('mousemove', (e) => {
 </script>
 </body>
 
-# Code Sederhana Tapi Keren
 Hai 😊 Teman! Kali ini aku mau berbagi code sederhana yang bikin tampilan website jadi lebih seru: emoji yang matanya bisa mengikuti kursor kamu! Lucu banget kan? Kalau kamu tertarik, bisa langsung copy-paste source code-nya di bawah. Tapi peringatan: ini untuk seru-seruan ya, jadi kalau kamu sudah jago koding, lebih seru bikin sendiri! 😁
 ## Kode HTML dan CSS untuk Struktur dan Tampilan
-
 Di sini, aku akan jelaskan bagian utama dari kode ini.
 HTML Struktur:
 ```html
@@ -165,21 +170,20 @@ document.addEventListener('mousemove', (e) => {
 });
 ```
 ### Penjelasan JavaScript:
-
-#### 1. Event Listener:
+#### Event Listener:
 `document.addEventListener('mousemove', ...)` - Kode ini mendeteksi posisi kursor saat bergerak di layar.
-#### 2. Menghitung Posisi Mata:
+#### Menghitung Posisi Mata:
 `const mataRect = mata.getBoundingClientRect();` - Mengambil posisi tiap mata di layar.
 const mataX dan mataY menghitung titik tengah dari tiap mata.
-#### 3. Menghitung Arah Pupil:
+#### Menghitung Arah Pupil:
 `const angle = Math.atan2(...)` - Menghitung sudut (angle) antara kursor dan titik tengah mata.
 const pupilX dan pupilY menghitung posisi pupil berdasarkan sudut dan jarak (const jarak = 5).
-#### 4. Gerakkan Pupil:
-```
+#### Gerakkan Pupil:
+```js
 pupil.style.transform = translate(${pupilX}px, ${pupilY}px);
 ```
 Menyusun pergerakan pupil agar mengikuti arah kursor, dengan jarak maksimum 5px dari tengah mata.
-# Full Code Here
+## Full Code Here
 ```html
 <style>
 .kepala {
@@ -230,7 +234,7 @@ Menyusun pergerakan pupil agar mengikuti arah kursor, dengan jarak maksimum 5px 
   border-radius: 0 0 50px 50px;
   position: absolute;
   bottom: 4px;
-  left: 50%;
+  left: 50%; 
   transform: translateX(-50%);
 }
 </style>

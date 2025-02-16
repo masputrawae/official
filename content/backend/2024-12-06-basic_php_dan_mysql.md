@@ -1,12 +1,13 @@
 ---
 title: Panduan dasar PHP dan MYSQL
 date: 2024-12-06T23:43:42+07:00
-last_modified: 2025-01-22T23:43:42+07:00
+last_modified: 2024-12-06T23:43:42+07:00
 description: Panduan dasar menghubungkan PHP dengan MySQL, menampilkan dan menyimpan data ke dalam database.
 excerpt: Artikel ini memberikan panduan langkah demi langkah untuk menghubungkan PHP dengan MySQL, menampilkan data dari database, dan menyimpan data melalui form HTML.
 categories:
   - PHP
   - Backend
+  - MySQL
 tags:
   - php
   - apache
@@ -19,14 +20,14 @@ tags:
   - web_development
   - web_server
   - server
-thumbnail: https://res.cloudinary.com/dpkqfchhu/image/upload/v1739352343/20ab4327-85ab-4299-bc71-b22976ff6bf1_yo1bqt.png
-pinned: true
+thumbnail: 
+pinned: false
 draft: false
+mathjax: false
 ---
-
 Panduan ini menjelaskan dasar-dasar untuk menghubungkan PHP ke MySQL, menampilkan data, serta menambah data ke dalam database. Baca dan simpan sebagai cheat sheet Anda!
 
-## 1. Koneksi ke Database (`koneksi.php`)
+## Koneksi ke Database (`koneksi.php`)
 
 Untuk menghubungkan PHP dengan MySQL, kita harus membuat **koneksi ke database**. Berikut adalah contoh kode untuk membuat koneksi:
 
@@ -55,7 +56,7 @@ if ($conn->connect_error) {
 
 ---
 
-## 2. Menampilkan Data dari Database (`tampil.php`)
+## Menampilkan Data dari Database (`tampil.php`)
 
 Setelah terkoneksi, kita bisa **menampilkan data** dari database menggunakan query SQL `SELECT`.
 
@@ -91,7 +92,7 @@ $conn->close();  // Tutup koneksi
 
 ---
 
-## 3. Form untuk Menambah Postingan (`form.php`)
+## Form untuk Menambah Postingan (`form.php`)
 
 Form ini memungkinkan pengguna untuk **mengirimkan data** (judul dan konten) ke server. Data ini akan diproses di PHP.
 
@@ -115,7 +116,7 @@ Form ini memungkinkan pengguna untuk **mengirimkan data** (judul dan konten) ke 
 
 ---
 
-## 4. PHP untuk Menyimpan Data (`tambah_post.php`)
+## PHP untuk Menyimpan Data (`tambah_post.php`)
 
 Setelah form disubmit, data dikirim ke PHP dan disimpan di dalam database.
 

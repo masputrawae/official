@@ -1,10 +1,14 @@
 ---
-title: Setup Git dan Github Lengkap
-description: 
-excerpt: Minggu, 20 Oktober 2024 pukul 13.15, saat hujan dan entah kenapa kepikiran untuk menulis ini, ya walaupun tidak niat tetapi aku tetap berusaha untuk menuliskan catatan berharga ini.
-date: 2024-10-20
+title: "Setup Git dan Github Lengkap"
+date: 2024-10-20T23:43:42+07:00
+last_modified: 2024-10-20T23:43:42+07:00
+description: Setup Git dan Github lengkap
+excerpt: 
 categories:
   - Software Development
+  - Git
+  - Linux
+  - Github
 tags:
   - git
   - github
@@ -14,10 +18,14 @@ tags:
   - pull
   - programming
   - development
-last_modified_at: 2024-10-20
-author:
+  - linux
+  - linux_command
+  - terminal
+thumbnail: 
+pinned: true
+draft: false
+mathjax: false
 ---
-# Setup Git Dan Github Lengkap 
 Pada Tanggal: Minggu, 20 Oktober 2024 pukul 13.15, saat hujan dan entah kenapa kepikiran untuk menulis ini, ya walaupun tidak niat tetapi aku tetap berusaha untuk menuliskan catatan berharga ini. 
 
 ## Persiapan

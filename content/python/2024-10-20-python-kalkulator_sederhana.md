@@ -1,20 +1,23 @@
 ---
-title: "Python: Kalkulator Sederhana"
-description: membuat program kalkulator sederhana menggunakan python
+title: Kalkulator Sederhana
+date: 2024-10-20T23:43:42+07:00
+last_modified: 2024-10-20T23:43:42+07:00
+description: Membuat program kalkulator sederhana menggunakan python
 excerpt: Pada Tanggal; Minggu, 20 Oktober 2024 pukul 15.10, aku sedang belajar python dan membuat sebuah program kalkulator sederhana, ini adalah kodenya, siapa tahu ada yang sedang mencari contekan ☝️
-date: 2024-11-11
 categories:
   - Python
+  - Programing
 tags:
   - python
   - belajar_python
   - basic_python
   - kalkulator_sederhana
   - programming
-last_modified_at: 2024-11-15
-author: Putra Jaya
+thumbnail: 
+pinned: false
+draft: false
+mathjax: false
 ---
-# ✍️ Python: Membuat Kalkulator Sederhana
 Pada Tanggal: Minggu, 20 Oktober 2024 pukul 15.10, aku sedang belajar python dan membuat sebuah program kalkulator sederhana, ini adalah kodenya, siapa tahu ada yang sedang mencari contekan ☝️
 
 ---

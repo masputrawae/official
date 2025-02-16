@@ -1,11 +1,12 @@
 ---
-title: Pengenalan Git
+title: "Pengenalan Git"
 date: 2024-10-21T23:43:42+07:00
-last_modified: 2025-01-22T23:43:42+07:00
-description: Panduan dasar Git untuk pemula. Pelajari cara menggunakan Git untuk mengelola versi kode, bekerja dalam tim, dan menyimpan proyek di GitHub.
+last_modified: 2024-10-21T23:43:42+07:00
+description: "Panduan dasar Git untuk pemula. Pelajari cara menggunakan Git untuk mengelola versi kode, bekerja dalam tim, dan menyimpan proyek di GitHub."
 excerpt: "Panduan Git untuk pemula: pelajari perintah dasar, konsep version control, dan cara kerja GitHub."
 categories:
   - Version Control
+  - Git
 tags:
   - git
   - github
@@ -16,9 +17,10 @@ tags:
   - push
   - pull
   - coding
-thumbnail: https://res.cloudinary.com/dpkqfchhu/image/upload/v1739357757/output_mqhcao.png
+thumbnail: 
 pinned: false
 draft: false
+mathjax: false
 ---
 
 Git adalah **sistem kontrol versi (Version Control System - VCS)** yang digunakan untuk melacak perubahan dalam kode atau file, terutama dalam proyek pengembangan perangkat lunak. Dengan Git, kamu bisa bekerja dalam tim tanpa khawatir akan kehilangan atau menimpa perubahan orang lain.  

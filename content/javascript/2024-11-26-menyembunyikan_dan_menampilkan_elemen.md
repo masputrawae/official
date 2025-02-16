@@ -1,25 +1,28 @@
 ---
-title: Javascript | Menyembunyikan dan Menampilkan Elemen
+title: Menyembunyikan dan Menampilkan Elemen
+date: 2024-11-26T23:43:42+07:00
+last_modified: 2024-11-26T23:43:42+07:00
 description: Cara sederhana untuk menyembunyikan dan menampilkan elemen menggunakan JavaScript di HTML
 excerpt: Panduan untuk membuat tombol yang dapat menyembunyikan atau menampilkan elemen di halaman web menggunakan JavaScript.
-date: 2024-11-26
 categories:
-  - JavaScript
-  - Belajar
-  - Cheat Sheet
+  - Web Development
+  - Javascript
+  - CSS
+  - HTML
 tags:
   - catatan_belajar
-  - cheat-sheet
+  - cheat_sheet
   - javascript
   - html
   - css
   - web_development
   - belajar_javascript
-last_modified_at: 2024-11-26
-author: Putra Jaya
+thumbnail: 
+pinned: false
+draft: false
+mathjax: false
 ---
-## Menyembunyikan dan menampilkan elemen
-### Struktur Html
+## Struktur Html
 
 ```html
 <!DOCTYPE html>
@@ -43,14 +46,14 @@ author: Putra Jaya
 </body>
 </html>
 ```
-### CSS
+## CSS
 ```css
 /* Konten default disembunyikan */
 #konten{
     display: none;
 }
 ```
-### JavaScript
+## JavaScript
 ```javascript
 document.getElementById('tampil').addEventListener('click', function () {
     const konten = document.getElementById('konten');
@@ -62,12 +65,12 @@ document.getElementById('tampil').addEventListener('click', function () {
     }
 });
 ```
-#### Apa Fungsi Kode Ini?
+### Apa Fungsi Kode Ini?
 Kode ini membuat tombol (atau elemen dengan `id="tampil"`) dapat digunakan untuk menampilkan atau menyembunyikan elemen lain (dengan `id="konten"`) melalui mekanisme *toggle*. Jadi, ketika elemen dengan `id="tampil"` diklik:
 - Jika elemen `konten` tersembunyi, maka elemen akan muncul.
 - Jika elemen `konten` terlihat, maka elemen akan disembunyikan.
 
-#### Bagaimana Cara Kerjanya?
+### Bagaimana Cara Kerjanya?
 
 1. Ambil Elemen Berdasarkan ID
    ```javascript
@@ -109,14 +112,14 @@ Kode ini membuat tombol (atau elemen dengan `id="tampil"`) dapat digunakan untuk
 
 ---
 
-#### Kenapa Bisa Bekerja?
+### Kenapa Bisa Bekerja?
 - JavaScript DOM (Document Object Model) memungkinkan kita untuk mengakses dan memanipulasi elemen HTML melalui kode.
 - Event Listener memonitor interaksi pengguna (dalam hal ini, klik), lalu mengeksekusi kode saat event terjadi.
 - CSS Property `display` menentukan apakah elemen terlihat di halaman atau tidak.
 
 ---
 
-### Contoh HTML untuk Kode Ini
+## Contoh HTML untuk Kode Ini
 ```html
 <button id="tampil">Tampilkan/Sembunyikan</button>
 <div id="konten" style="display: none;">
@@ -126,7 +129,7 @@ Kode ini membuat tombol (atau elemen dengan `id="tampil"`) dapat digunakan untuk
 
 ---
 
-### Kenapa Menarik?
+## Kenapa Menarik?
 Kode ini sederhana tapi sangat berguna untuk fitur interaktif seperti:
 - Tombol "Lihat Selengkapnya".
 - Menu dropdown.

@@ -1,20 +1,23 @@
 ---
-title: Rclone Full Guide
-description: Menerangkan tentang bagaimana penggunaan Rclone, dengan Gdrive full
-excerpt: rclone adalah sebuah alat baris perintah (command-line tool) yang digunakan untuk mengelola dan mentransfer data ke dan dari berbagai layanan penyimpanan cloud. Rclone mendukung berbagai penyedia cloud, termasuk Google Drive, Dropbox, Amazon S3, OneDrive, dan banyak lagi.
-date: 2024-10-21
+title: "Rclone Full Guide"
+date: 2024-10-21T23:43:42+07:00
+last_modified: 2024-10-21T23:43:42+07:00
+description: "Menerangkan tentang bagaimana penggunaan Rclone, dengan Gdrive full"
+excerpt: "rclone adalah sebuah alat baris perintah (command-line tool) yang digunakan untuk mengelola dan mentransfer data ke dan dari berbagai layanan penyimpanan cloud. Rclone mendukung berbagai penyedia cloud, termasuk Google Drive, Dropbox, Amazon S3, OneDrive, dan banyak lagi."
 categories:
   - File Synchronization
+  - Rclone
 tags:
   - rclone
   - install_rclone
-  - rclone_config
+  - rclone_cpnfig
   - sync
   - cloud_storage
-last_modified_at: 2024-11-15
-author: Putra Jaya
+thumbnail: 
+pinned: false
+draft: false
+mathjax: false
 ---
-# Installation Rclone Lengkap
 ## Apa Itu Rclone
 rclone adalah sebuah alat baris perintah (command-line tool) yang digunakan untuk mengelola dan mentransfer data ke dan dari berbagai layanan penyimpanan cloud. Rclone mendukung berbagai penyedia cloud, termasuk Google Drive, Dropbox, Amazon S3, OneDrive, dan banyak lagi.
 ### Fitur Utama Rclone

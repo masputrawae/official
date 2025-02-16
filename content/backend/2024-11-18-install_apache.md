@@ -1,11 +1,13 @@
 ---
-title: Cara Install Apache di Ubuntu
-description: Panduan langkah demi langkah untuk menginstall Apache di Ubuntu, mulai dari update sistem hingga cek status server.
-excerpt: Panduan lengkap cara install Apache di Ubuntu untuk server lokal.
-date: 2024-11-18
+title: "Cara Install Apache di Ubuntu"
+date: 2024-11-18T23:43:42+07:00
+last_modified: 2024-11-18T23:43:42+07:00
+description: "Panduan langkah demi langkah untuk menginstall Apache di Ubuntu, mulai dari update sistem hingga cek status server."
+excerpt: "Panduan lengkap cara install Apache di Ubuntu untuk server lokal."
 categories:
-  - Server
   - Linux
+  - Server
+  - Apache
 tags:
   - ubuntu
   - server
@@ -14,11 +16,11 @@ tags:
   - web_server
   - instalasi
   - tutorial
-last_modified_at: 2024-11-18
-author: Putra Jaya
-pinned: true
+thumbnail:
+pinned: false
+draft: false
+mathjax: false
 ---
-# Cara Install Apache di Ubuntu
 Apache adalah server web yang paling populer dan digunakan untuk menyajikan konten website di internet. Secara teknis, Apache bekerja dengan menerima permintaan (request) dari pengguna melalui protokol HTTP, lalu mengirimkan halaman web atau file terkait sebagai respons. Apache mendukung berbagai modul, seperti untuk PHP, sehingga kamu bisa menjalankan aplikasi web dinamis di server ini. Apache juga terkenal karena fleksibilitas, keamanannya, dan kemampuannya untuk mengelola banyak situs dalam satu server.
 ## Langkah 1: Update Package Manager
 Kita mulai dengan memastikan semua paket di sistemmu up-to-date:

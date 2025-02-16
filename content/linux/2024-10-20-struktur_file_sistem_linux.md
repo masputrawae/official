@@ -1,27 +1,29 @@
 ---
-title: Memahami Struktur Hierarki Sistem File Linux
-description: Pengenalan struktur file dan direktori pada sistem Linux
-excerpt: Sistem operasi Linux memiliki struktur hierarki sistem file yang unik dan terorganisir dengan baik. Memahami struktur ini sangat penting bagi pengguna, terutama bagi mereka yang ingin mendalami penggunaan Linux secara lebih mendalam.
-date: 2024-10-21
+title: "Struktur Hierarki Sistem File Linux"
+date: 2024-10-21T23:43:42+07:00
+last_modified: 2024-10-21T23:43:42+07:00
+description: "Pengenalan struktur file dan direktori pada sistem Linux"
+excerpt: "Sistem operasi Linux memiliki struktur hierarki sistem file yang unik dan terorganisir dengan baik. Memahami struktur ini sangat penting bagi pengguna, terutama bagi mereka yang ingin mendalami penggunaan Linux secara lebih mendalam."
 categories:
   - Linux
 tags:
+  - linux
   - linux_file_system
   - struktur_file_linux
   - belajar_linux
   - basic_linux
   - dasar_linux
-last_modified_at: 2024-11-12
-author:
+thumbnail: 
+pinned: true
+draft: false
+mathjax: false
 ---
-# Memahami Struktur Hierarki Sistem File Linux
-
 Sistem operasi Linux memiliki struktur hierarki sistem file yang unik dan terorganisir dengan baik. Memahami struktur ini sangat penting bagi pengguna, terutama bagi mereka yang ingin mendalami penggunaan Linux secara lebih mendalam.
 ## 1. Root Directory (`/`)
 Root directory, yang ditunjukkan dengan simbol `/`, adalah direktori utama dalam sistem Linux. Semua berkas dan direktori lainnya berada di bawah root directory ini. Struktur sistem file Linux diibaratkan seperti pohon, di mana root menjadi batang dan cabang-cabangnya adalah direktori lainnya.
 ### 2. Direktor-Direktor Penting di bawah Root
 Berikut adalah direktori-direktori penting yang terdapat di bawah root:
-```
+```bash
 /
 ├── bin          # Perintah dasar dan utilitas
 ├── boot         # Berkas yang diperlukan untuk booting

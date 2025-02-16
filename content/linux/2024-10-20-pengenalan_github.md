@@ -1,20 +1,24 @@
 ---
-title: Pengenalan GitHub
+title: Pengenalan Github
+date: 2024-10-21T23:43:42+07:00
+last_modified: 2024-10-21T23:43:42+07:00
 description: Penjelasan singkat tentang GitHub
-date: 2024-10-21
 excerpt: GitHub adalah platform hosting untuk proyek-proyek yang menggunakan Git. GitHub menyediakan ruang untuk menyimpan repository Git secara online, sehingga pengembang di seluruh dunia bisa berkolaborasi, berbagi, dan mengelola kode secara bersama-sama.
 categories:
   - Software Development
+  - Github
+  - Git
 tags:
-  - version_control
-  - collaboration
   - github
+  - github_pages
+  - version_control
   - open_source
-  - belajar_github
-last_modified_at: 2024-11-12
-author:
+  - linux
+thumbnail: 
+pinned: false
+draft: false
+mathjax: false
 ---
-# Apa Itu Github
 GitHub adalah **platform hosting untuk proyek-proyek yang menggunakan Git**. GitHub menyediakan ruang untuk menyimpan repository Git secara online, sehingga pengembang di seluruh dunia bisa berkolaborasi, berbagi, dan mengelola kode secara bersama-sama. GitHub sangat populer di kalangan pengembang karena kemudahannya untuk bekerja sama dalam pengembangan proyek, terutama proyek open-source.
 
 Berikut penjelasan lengkap tentang GitHub:

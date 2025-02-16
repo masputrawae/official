@@ -1,20 +1,23 @@
 ---
-title: "Python: ATM Sederhana"
+title: Program ATM Sederhana
+date: 2024-10-19T23:43:42+07:00
+last_modified: 2024-10-19T23:43:42+07:00
 description: membuat program ATM sederhana menggunakan python
 excerpt: Pada Tanggal; Minggu, 19 Oktober 2024 pukul 20.10, aku sedang belajar python dan membuat sebuah program atm sederhana, ini adalah kodenya, siapa tahu ada yang sedang mencari contekan ☝️
-date: 2024-11-11
 categories:
   - Python
+  - Programing
 tags:
   - python
   - basic_python
   - belajar_python
   - programming
   - atm_sederhana
-last_modified_at: 2024-11-15
-author: Putra Jaya
+thumbnail: 
+pinned: false
+draft: false
+mathjax: false
 ---
-# ✍️ Python: Membuat ATM Sederhana
 Pada Tanggal: Minggu, 19 Oktober 2024 pukul 20.10, aku sedang belajar python dan membuat sebuah program atm sederhana, ini adalah kodenya, siapa tahu ada yang sedang mencari contekan ☝️
 
 ```python

@@ -1,13 +1,15 @@
 ---
 title: Cara Install PhpMyAdmin di Ubuntu
+date: 2024-11-18T23:43:42+07:00
+last_modified: 2024-11-18T23:43:42+07:00
 description: Panduan instalasi dan konfigurasi phpMyAdmin di Ubuntu untuk memudahkan pengelolaan database MySQL.
 excerpt: phpMyAdmin adalah alat berbasis web yang digunakan untuk mengelola database MySQL secara grafis. Dengan phpMyAdmin, pengguna bisa melakukan berbagai tugas seperti membuat, mengedit, menghapus database, tabel, dan data, serta menjalankan query SQL tanpa perlu menggunakan baris perintah.
-date: 2024-11-18
 categories:
   - Server
   - Database
   - Database Management
   - Linux
+  - PhpMyAdmin
 tags:
   - phpmyadmin
   - mysql
@@ -15,11 +17,11 @@ tags:
   - instalasi
   - web_server
   - tutorial
-last_modified_at: 2024-11-18
-author: Putra Jaya
-pinned: true
+thumbnail: 
+pinned: false
+draft: false
+mathjax: false
 ---
-# Langkah-langkah Install phpMyAdmin
 phpMyAdmin adalah alat berbasis web yang digunakan untuk mengelola database MySQL secara grafis. Dengan phpMyAdmin, pengguna bisa melakukan berbagai tugas seperti membuat, mengedit, menghapus database, tabel, dan data, serta menjalankan query SQL tanpa perlu menggunakan baris perintah. Alat ini memudahkan pengelolaan database bagi pengembang web, terutama yang baru mengenal MySQL.
 ## Langkah 1: Install phpMyAdmin
 Ketik perintah ini di terminal untuk install phpMyAdmin:

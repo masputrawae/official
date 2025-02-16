@@ -1,9 +1,9 @@
 ---
-title: Typography
+title: "Typography"
 date: 2025-02-12T23:43:42+07:00
 last_modified: 2025-02-12T23:43:42+07:00
-description: Artikel ini menguji berbagai sintaks Markdown yang didukung oleh Hugo.
-excerpt: Menggunakan artikel ini untuk memastikan elemen-elemen Markdown ditampilkan dengan benar di situs Hugo Anda.
+description: "Artikel ini menguji berbagai sintaks Markdown yang didukung oleh Hugo."
+excerpt: "Menggunakan artikel ini untuk memastikan elemen-elemen Markdown ditampilkan dengan benar di situs Hugo Anda.'"
 categories:
   - Markdown
   - Typography
@@ -12,7 +12,7 @@ tags:
   - typography
   - hugo
   - testing
-thumbnail: https://res.cloudinary.com/dpkqfchhu/image/upload/v1739377878/ef468ff3-afe9-4c05-80da-e41fe1a388d6_tf7nh2.png
+thumbnail: 
 pinned: true
 draft: false
 mathjax: true
@@ -206,16 +206,16 @@ Terjadi error pada sistem. Periksa kembali konfigurasi Anda.
 ---
 ## Images
 ### Default (Center)
-{{< image src="https://picsum.photos/360?1" alt="Gambar Center" align="center" >}}
+{{< image src="https://placehold.co/100" alt="Gambar Center" align="center" >}}
 Veniam labore officia sunt exercitation consequat deserunt excepteur et occaecat elit in ex. Do ex enim sunt reprehenderit. Aute nulla qui Lorem eu incididunt velit aliquip duis laborum est. Id eu ex qui velit duis cupidatat. Amet commodo voluptate pariatur et cupidatat eiusmod incididunt eiusmod proident ut ullamco esse. Anim ullamco sunt eu fugiat id.
 ### Left Float
-{{< image src="https://picsum.photos/360?2" alt="Gambar Left" align="left" >}}
+{{< image src="https://placehold.co/100" alt="Gambar Left" align="left" >}}
 Cillum culpa do sint consequat amet culpa et quis eiusmod in irure. Elit excepteur occaecat enim cupidatat magna ex fugiat aute fugiat occaecat dolor velit anim. Aute tempor et cupidatat nostrud sunt nulla dolor eiusmod esse culpa aliqua elit dolor aute. Do mollit aute voluptate Lorem incididunt. Sit nostrud eu veniam enim proident esse eiusmod reprehenderit dolor mollit.
 ### Right Float
-{{< image src="https://picsum.photos/360?3" alt="Gambar Right" align="right" >}}
+{{< image src="https://placehold.co/100" alt="Gambar Right" align="right" >}}
 Ipsum ea magna id pariatur quis cillum. Quis id do ea amet reprehenderit amet velit voluptate adipisicing eu deserunt voluptate nisi proident. Qui dolore tempor velit non anim est occaecat cillum. Elit id esse consequat commodo.Tempor pariatur consectetur ipsum excepteur non pariatur esse proident officia ea enim officia voluptate commodo. In proident pariatur aliquip dolor consequat do irure laborum laboris nulla. Cillum dolor pariatur eiusmod ex ullamco duis incididunt. Duis nulla ipsum in deserunt duis enim. Commodo cillum ut do consectetur.
 ### Full Float
-{{< image src="https://picsum.photos/360?4" alt="Gambar Full" align="full" >}}
+{{< image src="https://placehold.co/100" alt="Gambar Full" align="full" >}}
 Ipsum ea magna id pariatur quis cillum. Quis id do ea amet reprehenderit amet velit voluptate adipisicing eu deserunt voluptate nisi proident. Qui dolore tempor velit non anim est occaecat cillum. Elit id esse consequat commodo.Tempor pariatur consectetur ipsum excepteur non pariatur esse proident officia ea enim officia voluptate commodo. In proident pariatur aliquip dolor consequat do irure laborum laboris nulla. Cillum dolor pariatur eiusmod ex ullamco duis incididunt. Duis nulla ipsum in deserunt duis enim. Commodo cillum ut do consectetur.
 
 ---

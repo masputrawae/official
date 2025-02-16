@@ -1,23 +1,28 @@
 ---
-title: Perintah Dasar Linux
-description: Perintah linux yang sering digunakan dan contoh praktis nya
-excerpt: Perintah linux yang sering digunakan dan contoh praktis nya
-date: 2024-11-11
+title: "Perintah Dasar Linux"
+date: 2024-11-11T23:43:42+07:00
+last_modified: 2024-11-11T23:43:42+07:00
+description: "Perintah linux yang sering digunakan dan contoh praktis nya"
+excerpt: P"erintah linux yang sering digunakan dan contoh praktis nya"
 categories:
   - Linux
 tags:
-  - perintah_dasar
   - linux
-  - linux_command
-  - basic_linux
-  - dasar_linux
-  - belajar_linux
   - cli
-last_modified_at: 2024-11-11
-author:
+  - terminal
+  - cheat_sheet
+  - basic_command
+  - basic_linux
+  - belajar_linux
+  - dasar_linux
+  - linux_command
+  - perintah_dasar
+thumbnail: 
+pinned: false
+draft: false
+mathjax: false
 ---
-# Perintah Dasar Linux
-#### 1. Navigasi File dan Direktori
+## Navigasi File dan Direktori
 - **`pwd`**: Menampilkan direktori kerja saat ini.
 ```bash
 pwd
@@ -35,7 +40,7 @@ cd /path/to/directory  # Pindah ke direktori tertentu
 cd ..                  # Pindah ke direktori induk
 cd ~                   # Pindah ke direktori home
 ```
-#### 2. Manajemen File
+## Manajemen File
 - **`cp`**: Menyalin file atau direktori.
 ```bash
 cp source.txt destination.txt                   # Menyalin file
@@ -65,7 +70,7 @@ mkdir -p parent_directory/new_directory         # Membuat direktori secara rekur
 ```bash
 rmdir empty_directory                            # Menghapus direktori kosong
   ```
-#### 3. Melihat dan Mengedit File
+## Melihat dan Mengedit File
 - **`cat`**: Menampilkan isi file.
 ```bash
 cat file.txt                                     # Menampilkan isi file
@@ -94,7 +99,7 @@ tail -f file.txt                                 # Mengikuti penambahan baru pad
 nano file.txt                                    # Mengedit file dengan nano
 vim file.txt                                     # Mengedit file dengan vim
   ```
-#### 4. Informasi Sistem
+## Informasi Sistem
 - **`top`**: Menampilkan proses yang berjalan secara real-time.
 ```bash
 top                                              # Menampilkan proses
@@ -129,7 +134,7 @@ uname -a                                        # Menampilkan informasi kernel d
 ```bash
 hostname                                        # Menampilkan nama host saat ini
 ```
-#### 5. Manajemen Pengguna
+## Manajemen Pengguna
 - **`adduser`**: Menambahkan pengguna baru.
 ```bash
 sudo adduser newusername                        # Menambahkan pengguna baru
@@ -146,7 +151,7 @@ whoami                                          # Menampilkan nama pengguna
 ```bash
 groups                                           # Menampilkan grup yang dimiliki oleh pengguna
   ```
-#### 6. Jaringan
+## Jaringan
 - **`ping`**: Mengirim paket ke alamat IP untuk menguji konektivitas.
 ```bash
 ping google.com                                  # Mengirim ping ke Google
@@ -168,7 +173,7 @@ netstat -tuln                                   # Menampilkan port yang terbuka 
 ```bash
 traceroute google.com                           # Menampilkan rute ke Google
 ```
-#### 7. Pencarian
+## Pencarian
 - **`find`**: Mencari file dalam direktori.
 ```bash
 find /path/to/search -name "filename.txt"     # Mencari file dengan nama tertentu
@@ -182,7 +187,7 @@ grep -r "search_term" /path/to/directory       # Mencari secara rekursif dalam d
 ```bash
 locate filename.txt                             # Mencari file berdasarkan nama
 ```
-#### 8. Manajemen Paket (Debian/Ubuntu)
+## Manajemen Paket (Debian/Ubuntu)
 - **`apt update`**: Memperbarui daftar paket.
 ```bash
 sudo apt update                                 # Memperbarui daftar paket
@@ -207,7 +212,7 @@ apt search package_name                         # Mencari paket yang sesuai deng
 ```bash
 apt show package_name                           # Menampilkan informasi tentang paket
 ```
-#### 9. Kompresi dan Ekstraksi
+## Kompresi dan Ekstraksi
 - **`tar`**: Mengompres dan mengekstrak file.
 ```bash
 tar -cvf archive.tar /path/to/directory        # Mengompres direktori menjadi file .tar
@@ -223,7 +228,7 @@ zip archive.zip file1 file2                     # Mengompres file menjadi file z
 ```bash
 unzip archive.zip                               # Mengekstrak file zip
 ```
-#### 10. Skrip dan Otomatisasi
+## Skrip dan Otomatisasi
 - **`bash`**: Menjalankan skrip bash.
 ```bash
 bash script.sh                                  # Menjalankan skrip bash

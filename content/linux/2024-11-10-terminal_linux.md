@@ -1,8 +1,9 @@
 ---
-title: Terminal Linux
-description: Penjelasan ringkas tentang terminal Linux
-excerpt: Terminal linux adalah antarmuka berbasis teks yang memungkinkan pengguna untuk berinteraksi dengan sistem operasi Linux melalui perintah-perintah yang diketik. Terminal sering dianggap salah satu alat yang sangat berguna dan sangat kuat dalam Linux, karena memberikan akses langsung ke sistem pengguna dan memungkinkan pengguna untuk melakukan berbagai tugas dengan efisiensi tinggi.
-date: 2024-11-10
+title: "Terminal Linux"
+date: 2024-11-10T23:43:42+07:00
+last_modified: 2024-11-10T23:43:42+07:00
+description: "Penjelasan ringkas tentang terminal Linux"
+excerpt: "Terminal linux adalah antarmuka berbasis teks yang memungkinkan pengguna untuk berinteraksi dengan sistem operasi Linux melalui perintah-perintah yang diketik. Terminal sering dianggap salah satu alat yang sangat berguna dan sangat kuat dalam Linux, karena memberikan akses langsung ke sistem pengguna dan memungkinkan pengguna untuk melakukan berbagai tugas dengan efisiensi tinggi."
 categories:
   - Linux
 tags:
@@ -13,11 +14,11 @@ tags:
   - belajar_linux
   - cli
   - terminal
-last_modified_at: 2024-11-12
-author:
+thumbnail: 
+pinned: false
+draft: false
+mathjax: false
 ---
-# Terminal Linux
-## Apa itu Terminal Linux?
 Terminal linux adalah antarmuka berbasis teks yang memungkinkan pengguna untuk berinteraksi dengan sistem operasi Linux melalui perintah-perintah yang diketik. Terminal sering dianggap salah satu alat yang sangat berguna dan sangat kuat dalam Linux, karena memberikan akses langsung ke sistem pengguna dan memungkinkan pengguna untuk melakukan berbagai tugas dengan efisiensi tinggi. Terminal juga dikenal dengan istilah "command line interface" (CLI).
 ## Keuntungan Menggunakan Terminal
 1. Kecepatan:
