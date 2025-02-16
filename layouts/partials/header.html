@@ -3,7 +3,11 @@
     <i class="bi bi-list"></i>
   </button>
   
-  <a class="site-header__title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+  {{ if .IsHome }}
+    <a class="site-header__title" href="{{ .Site.BaseURL }}">{{ .Title }}</a>
+  {{ else }}
+    <a class="site-header__title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+  {{ end }}
   
   <button class="btn btn--offcanvas" id="rightOpen" aria-label="Open Right Sidebar">
     <i class="bi bi-book"></i>
