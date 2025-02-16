@@ -6,7 +6,8 @@
     @include m.shadow();
 
     &--icon {
-        @include m.width-height(40px, 40px);
+        @include m.width-height(35px, 35px);
+        border: var(--border-1) solid var(--cl-border);
         border-radius: var(--size-1);
     }
 
