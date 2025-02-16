@@ -1,5 +1,2 @@
 User-agent: *
-Disallow: /private-page/
-Allow: /
-
 Sitemap: {{ .Site.BaseURL }}sitemap.xml

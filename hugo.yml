@@ -14,23 +14,23 @@ Params:
 
   socialMedia:
     - social: "facebook"
-      url: "https://facebook.com/example.com"
+      url: "https://www.facebook.com/profile.php?id=61566134978045&mibextid=rS40aB7S9Ucbxw6v"
       icon: "bi-facebook"
 
     - social: "twitter"
-      url: "https://twitter.com/example"
-      icon: "bi-twitter"
+      url: "https://x.com/Masputrawae"
+      icon: "bi-twitter-x"
 
     - social: "instagram"
-      url: "https://instagram.com/example"
+      url: "https://www.instagram.com/masputrawae?igsh=MXZhNHBuY3ByYndjYg=="
       icon: "bi-instagram"
 
     - social: "discord"
-      url: "https://discord.com/in/example"
+      url: "https://discord.gg/nM4EP8DJFZ"
       icon: "bi-discord"
 
     - social: "github"
-      url: "https://github.com/example"
+      url: "https://github.com/masputrawae"
       icon: "bi-github"
 
 #=================================SETTING
