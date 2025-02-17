@@ -1,5 +1,5 @@
 ---
-title: Menyembunyikan dan Menampilkan Elemen
+title: Show & Hidden Element
 date: 2024-11-26T23:43:42+07:00
 last_modified: 2024-11-26T23:43:42+07:00
 description: Cara sederhana untuk menyembunyikan dan menampilkan elemen menggunakan JavaScript di HTML

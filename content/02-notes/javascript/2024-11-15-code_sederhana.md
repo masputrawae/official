@@ -1,5 +1,5 @@
 ---
-title: Mata Emoji yang Menatap Kamu!
+title: Mata Emoji Ikuti Cursor
 date: 2024-11-15T23:43:42+07:00
 last_modified: 2024-11-15T23:43:42+07:00
 description: Pelajari cara membuat emoji sederhana yang matanya mengikuti kursor kamu dengan kode HTML, CSS, dan JavaScript. Kode ini mudah dipahami dan cocok untuk menambah elemen interaktif di halaman webmu. Yuk, coba dan buat tampilan website kamu jadi lebih seru!

@@ -1,8 +1,8 @@
 ---
-title: "Perintah Dasar Linux"
+title: Perintah Dasar Linux
 date: 2024-11-11T23:43:42+07:00
 last_modified: 2024-11-11T23:43:42+07:00
-description: "Perintah linux yang sering digunakan dan contoh praktis nya"
+description: Perintah linux yang sering digunakan dan contoh praktis nya
 excerpt: P"erintah linux yang sering digunakan dan contoh praktis nya"
 categories:
   - Linux
@@ -18,7 +18,7 @@ tags:
   - linux_command
   - perintah_dasar
 thumbnail: 
-pinned: false
+pinned: true
 draft: false
 mathjax: false
 ---
