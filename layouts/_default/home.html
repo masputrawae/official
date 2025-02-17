@@ -35,6 +35,9 @@
   </figure>
 {{ end }}
 
+<article>
+  {{- .Content | safeHTML -}}
+</article>
 
 {{ with site.Data.repos }}
     {{ $repos := . }}
