@@ -1,9 +1,9 @@
 ---
-title: "Cara Install MySQL di Ubuntu"
+title: Install MySQL
 date: 2024-11-18T23:43:42+07:00
 last_modified: 2024-11-18T23:43:42+07:00
-description: "Panduan langkah-langkah untuk menginstal dan mengamankan MySQL di Ubuntu."
-excerpt: "MySQL adalah sistem manajemen basis data (DBMS) yang bersifat open-source dan digunakan untuk menyimpan dan mengelola data dalam aplikasi web. MySQL menggunakan bahasa SQL (Structured Query Language) untuk mengakses, mengubah, dan mengelola data."
+description: Panduan langkah-langkah untuk menginstal dan mengamankan MySQL di Ubuntu.
+excerpt: MySQL adalah sistem manajemen basis data (DBMS) yang bersifat open-source dan digunakan untuk menyimpan dan mengelola data dalam aplikasi web. MySQL menggunakan bahasa SQL (Structured Query Language) untuk mengakses, mengubah, dan mengelola data.
 categories:
   - Server
   - Database

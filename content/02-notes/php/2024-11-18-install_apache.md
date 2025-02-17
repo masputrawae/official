@@ -1,9 +1,9 @@
 ---
-title: "Cara Install Apache di Ubuntu"
+title: Install Apache
 date: 2024-11-18T23:43:42+07:00
 last_modified: 2024-11-18T23:43:42+07:00
-description: "Panduan langkah demi langkah untuk menginstall Apache di Ubuntu, mulai dari update sistem hingga cek status server."
-excerpt: "Panduan lengkap cara install Apache di Ubuntu untuk server lokal."
+description: Panduan langkah demi langkah untuk menginstall Apache di Ubuntu, mulai dari update sistem hingga cek status server.
+excerpt: Panduan lengkap cara install Apache di Ubuntu untuk server lokal.
 categories:
   - Linux
   - Server
@@ -16,7 +16,7 @@ tags:
   - web_server
   - instalasi
   - tutorial
-thumbnail:
+thumbnail: 
 pinned: false
 draft: false
 mathjax: false

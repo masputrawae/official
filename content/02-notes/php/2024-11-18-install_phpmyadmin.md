@@ -1,5 +1,5 @@
 ---
-title: Cara Install PhpMyAdmin di Ubuntu
+title: Install PhpMyAdmin
 date: 2024-11-18T23:43:42+07:00
 last_modified: 2024-11-18T23:43:42+07:00
 description: Panduan instalasi dan konfigurasi phpMyAdmin di Ubuntu untuk memudahkan pengelolaan database MySQL.

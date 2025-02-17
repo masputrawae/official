@@ -1,9 +1,9 @@
 ---
-title: "Cara Install PHP di Ubuntu"
+title: Install PHP
 date: 2024-11-18T23:43:42+07:00
 last_modified: 2024-11-18T23:43:42+07:00
-description: "Panduan langkah-langkah untuk menginstal dan mengonfigurasi PHP di Ubuntu untuk aplikasi web dinamis."
-excerpt: "PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang digunakan untuk membuat aplikasi web dinamis. PHP memungkinkan pengembang untuk menghasilkan konten web yang interaktif, seperti form, login, dan pengelolaan data dari database (misalnya MySQL)."
+description: Panduan langkah-langkah untuk menginstal dan mengonfigurasi PHP di Ubuntu untuk aplikasi web dinamis.
+excerpt: PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang digunakan untuk membuat aplikasi web dinamis. PHP memungkinkan pengembang untuk menghasilkan konten web yang interaktif, seperti form, login, dan pengelolaan data dari database (misalnya MySQL).
 categories:
   - Web Development
   - Linux
