@@ -179,4 +179,9 @@ body {
         font-family: var(--font-heading);
         color: var(--cl-accent);
     }
+    
+    small {
+        font-size: var(--fs-sm);
+        color: var(--cl-muted);
+    }
 }
