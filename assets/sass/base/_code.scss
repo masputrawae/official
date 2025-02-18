@@ -53,7 +53,7 @@
         color: var(--code-line-number);
     }
     .line { display: flex; }
-    .k, .kc, .kd, .kp, .kr, .kt, .no { color: var(--code-keyword); }
+    .k, .kc, .kd, .kp, .kr, .kt, .no { color: var(--code-keywoard); }
     .kn, .nt, .o, .ow, .gd { color: var(--code-operator); }
     .na, .nc, .nd, .ne, .nf, .nx, .gi { color: var(--code-function); }
     .l, .se, .m, .mb, .mf, .mh, .mi, .il, .mo { color: var(--code-number); }
