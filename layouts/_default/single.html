@@ -8,7 +8,7 @@
     {{ $lastModMachine := .Params.last_modified | time.Format "2006-01-02T15:04:05-07:00" }}
     {{ $lastModHuman := .Params.last_modified | time.Format ":date_long" }}
     <small>
-      <span>Diterbitkan: <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></span> |
+      <span>Diterbitkan: <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></span><br>
       <span>Terakhir diperbarui: <time datetime="{{ $lastModMachine }}">{{ $lastModHuman }}</time></span>
     </small>
   </header>
