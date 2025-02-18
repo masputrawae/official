@@ -7,7 +7,7 @@ title: "MPw Official"
 Params:
   description: "Deskripsikan tentang dirimu di sini. sesuai keinginanmu!!"
   bio: "Laboris laborum ullamco ullamco do mollit ad incididunt Lorem qui dolor ipsum Lorem deserunt."
-  keywords: "hugo, markdown, blog, contoh"
+  keywords: "catatan, belajar, pemrograman, teknologi, website, tutorial, blog"
   author: "Putra Jaya"
   username: "masputrawae"
   avatar: "images/android-chrome-512x512.png"
@@ -39,7 +39,10 @@ enableRobotsTXT: true
 pluralizeListTitles: false
 
 sitemap:
-  filename: "sitemap.xml"
+  changeFreq: "always"
+  disable: false
+  filename: sitemap.xml
+  priority: -1
 
 mediaTypes:
   "application/json":
