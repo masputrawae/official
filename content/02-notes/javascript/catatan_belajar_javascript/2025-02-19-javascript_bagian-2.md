@@ -29,6 +29,9 @@ Teks harus diapit oleh tanda kutip (" " atau ' ').
 let nama = "Budi";
 console.log(nama); // Output: Budi
 ```
+
+---
+
 - Number (angka)
 Bisa berupa bilangan bulat atau desimal.
 ```javascript
@@ -36,18 +39,27 @@ let umur = 25;
 let berat = 60.5;
 console.log(umur, berat); // Output: 25 60.5
 ```
+
+---
+
 - Boolean (benar/salah)
 Hanya memiliki dua nilai: true atau false.
 ```javascript
 let sudahMakan = true;
 console.log(sudahMakan); // Output: true
 ```
+
+---
+
 - Undefined (tidak ada nilai)
 Variabel dibuat tetapi belum diberi nilai.
 ```javascript
 let alamat;
 console.log(alamat); // Output: undefined
 ```
+
+---
+
 - Null (kosong)
 Variabel memiliki nilai kosong (sengaja dibuat kosong).
 ```javascript
@@ -67,6 +79,9 @@ let b = 3;
 console.log(a + b); // Output: 13
 console.log(a % b); // Output: 1
 ```
+
+---
+
 - Operator Perbandingan (hasilnya true atau false)
 Contoh:
 ```javascript
@@ -74,6 +89,9 @@ let angka = 10;
 console.log(angka == "10");  // true (tidak cek tipe)
 console.log(angka === "10"); // false (cek tipe)
 ```
+
+---
+
 - Operator Logika (digunakan dalam kondisi if)
 Contoh:
 ```javascript
