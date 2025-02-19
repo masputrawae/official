@@ -46,6 +46,13 @@
   </div>
 </article>
 {{ if .Params.mathjax }}
+<style>
+  .math-container {
+    overflow-x: auto; 
+    white-space: nowrap; 
+    max-width: 100%;
+  }  
+</style>
 <script>
   window.MathJax = {
     tex: {
