@@ -1,7 +1,7 @@
 ---
 title: Kondisi if-else
 date: 2025-02-20T03:00:00+07:00
-last_modified: 2025-02-21T14:17:00
+last_modified: 2025-02-21T14:17:00+07:00
 description: Catatan belajar JavaScript Kondisi if-else.
 excerpt: Catatan belajar atau ringkasan tentang JavaScript Kondisi if-else.
 categories:

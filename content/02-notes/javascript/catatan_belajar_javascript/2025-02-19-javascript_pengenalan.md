@@ -1,7 +1,7 @@
 ---
 title: Pengenalan JavaScript
 date: 2025-02-19T23:12:00+07:00
-last_modified: 2025-02-21T12:37:00
+last_modified: 2025-02-21T12:37:00+07:00
 description: Catatan belajar pengenalan JavaScript
 excerpt: Catatan belajar atau ringkasan tentang pengenalan JavaScript
 categories:

@@ -1,7 +1,7 @@
 ---
 title: Looping
-date: 2025-02-21T15:00:00
-last_modified: 2025-02-21T15:00:00
+date: 2025-02-21T15:00:00+07:00
+last_modified: 2025-02-21T15:00:00+07:00
 description: Catatan belajar JavaScript Looping
 excerpt: Catatan belajar atau ringkasan tentang JavaScript Looping.
 categories:

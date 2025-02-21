@@ -1,7 +1,7 @@
 ---
 title: Variabel & Tipe Data
 date: 2025-02-19T23:25:00+07:00
-last_modified: 2025-02-21T14:01:00
+last_modified: 2025-02-21T14:01:00+07:00
 description: Catatan belajar JavaScript Variabel dan Tipe Data
 excerpt: Catatan belajar atau ringkasan tentang JavaScript Variabel dan Tipe Data.
 categories:
