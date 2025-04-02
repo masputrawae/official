@@ -1,0 +1,3 @@
+[submodule "themes/my-notes-theme"]
+	path = themes/my-notes-theme
+	url = https://github.com/masputrawae/my-notes.git
