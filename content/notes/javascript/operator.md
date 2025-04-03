@@ -21,7 +21,7 @@ draft: false
 
 ## Operator di JavaScript
 
-Operator digunakan untuk melakukan operasi pada nilai atau [variabel](variabel).
+Operator digunakan untuk melakukan operasi pada nilai atau [variabel](variabel-dan-tipe-data).
 
 ### Operator Aritmatika (untuk perhitungan)
 
