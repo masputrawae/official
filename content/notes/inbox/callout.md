@@ -1,9 +1,9 @@
 ---
-title: "Panduan Penggunaan Callout"
+title: Panduan Penggunaan Callout
+image: https://placehold.co/1080x520
+description: Panduan lengkap tentang cara menggunakan callout dalam tema ini, terinspirasi dari Obsidian.
 date: 2025-04-02T01:19:10+07:00
 lastModified: 2025-04-02T01:19:10+07:00
-image: https://placehold.co/1080x520
-description: "Panduan lengkap tentang cara menggunakan callout dalam tema ini, terinspirasi dari Obsidian."
 tags:
   - dokumentasi
   - callout

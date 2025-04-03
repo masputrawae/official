@@ -1,9 +1,9 @@
 ---
 title: Shortcut Vim
 image: https://placehold.co/1080x520
-description: "Shortcut Vim"
-date: 2025-02-17T14:53:00+07:00
-last_modified: 2025-02-17T14:53:00+07:00
+description: Kumpul Shortcut Vim yang umum digunakan
+date: 2025-04-03T14:53:00+07:00
+last_modified: 2025-04-03T14:53:00+07:00
 tags:
   - vim
   - linux
@@ -15,7 +15,7 @@ categories:
   - Text Editor
   - Linux
 grouping:
-  - "📚 Learning"
+  - 📚 Learning
 pinned: true
 draft: false
 mathjax: false

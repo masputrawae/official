@@ -1,29 +1,32 @@
 ---
-title: Variabel & Tipe Data
-date: 2025-02-19T23:25:00+07:00
-last_modified: 2025-02-21T14:01:00+07:00
-description: Catatan belajar JavaScript Variabel dan Tipe Data
-excerpt: Catatan belajar atau ringkasan tentang JavaScript Variabel dan Tipe Data.
-categories:
-  - Programing
-  - Javascript
+title: Variabel Dan Tipe Data
+image: https://placehold.co/1080x520
+description: Variabel dan tipe data di javascript
+date: 2025-04-03T02:30:00+07:00
+last_modified: 2025-04-03T02:30:00+07:00
 tags:
-  - programming
   - javascript
   - belajar_javascript
-  - catatan_belajar
-  - javascript_pemula
-  - belajar_programming
+  - programming
   - web_development
-  - front_end
-thumbnail: 
+  - development
+  - variabel
+  - tipe_data
+categories:
+  - Javascript
+grouping:
+  - 📚 Learning
 pinned: false
-draft: false
 mathjax: false
+draft: false
 ---
+
 ## Variabel
-Di JavaScript, ada tiga cara untuk mendeklarasikan variabel,
-### `var` (Versi Lama)
+
+Di JavaScript, ada tiga cara untuk mendeklarasikan variabel
+
+### var (Versi Lama)
+
 Kelebihan:
 - Dapat dideklarasikan ulang dalam scope yang sama.
 - Bersifat function-scoped, artinya hanya dikenali di salam fungsi tempat ia di deklarasikan.
@@ -40,7 +43,9 @@ if (true){
 }
 console.log(x);  // Hasil 20
 ```
-### `let` (Variabel Modern, Disarankan)
+
+### let (Variabel Modern, Disarankan)
+
 Kelebihan: 
 - Memiliki block scope, hanya bisa di akses di dalam `{}` tempat ia dideklarasikan.
 - Bisa diubah nilainya, tapi tidak bisa dideklarasikan ulang dalam scope yang sama.
@@ -56,7 +61,9 @@ if (true) {
 }
 console.log(y)  // Output 30 bukan 40
 ```
-### `const` (Variabel Konstan, Tidak bisa diubah)
+
+### const (Variabel Konstan, Tidak bisa diubah)
+
 Kelebihan:
 - Nilainya tidak bisa diubah setelah dideklarasikan.
 - Memiliki block scope seperti let.
@@ -75,24 +82,30 @@ person.name = "Doe"; // Bisa diubah karena hanya mengubah property, bukan variab
 console.log(person.name) // Output: Doe
 ```
 
-{{< status status="tips" title="Rekomendasi!" >}}
-- Gunakan let untuk variabel yang bisa berubah.
-- Gunakan const untuk nilai yang tidak berubah.
-- Hindari var, kecuali jika memang diperlukan untuk kompatibilitas dengan kode lama.
-{{< /status >}}
+> [!tip] 
+> - Gunakan let untuk variabel yang bisa berubah.
+> - Gunakan const untuk nilai yang tidak berubah.
+> - Hindari var, kecuali jika memang diperlukan untuk kompatibilitas dengan kode lama.
 
 ---
-## Tipe Data di JavaScript
-Tipe data adalah jenis nilai yang bisa disimpan di variabel. Di JavaScript, ada beberapa tipe data utama:
+
+## Tipe Data
+
+Tipe data adalah jenis nilai yang bisa disimpan di variabel. Di JavaScript, ada beberapa tipe data utama
+
 ### String(teks)
+
 Teks harus diapit oleh tanda kutip (`" "` atau `' '`).
+
 ```javascript
 let nama = "Budi";
 console.log(nama); // Output: Budi
 ```
 
 ### Number (angka)
+
 Bisa berupa bilangan bulat atau desimal.
+
 ```javascript
 let umur = 25;
 let berat = 60.5;
@@ -100,20 +113,25 @@ console.log(umur, berat); // Output: 25 60.5
 ```
 
 ### Boolean (benar/salah)
+
 Hanya memiliki dua nilai: `true` atau `false`.
+
 ```javascript
 let sudahMakan = true;
 console.log(sudahMakan); // Output: true
 ```
 
 ### Undefined (tidak ada nilai)
+
 Variabel dibuat tetapi belum diberi nilai.
+
 ```javascript
 let alamat;
 console.log(alamat); // Output: undefined
 ```
 
 ### Null (kosong)
+
 Variabel memiliki nilai kosong (sengaja dibuat kosong).
 
 ```javascript
