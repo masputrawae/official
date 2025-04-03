@@ -1,36 +1,42 @@
 ---
-title: Looping
-date: 2025-02-21T15:00:00+07:00
-last_modified: 2025-02-21T15:00:00+07:00
-description: Catatan belajar JavaScript Looping
-excerpt: Catatan belajar atau ringkasan tentang JavaScript Looping.
-categories:
-  - Programing
-  - Javascript
+title: Perulangan (Looping)
+image: https://placehold.co/1080x520
+description: "Catatan belajar atau ringkasan tentang JavaScript Looping."
+date: 2025-04-03T17:15:15+07:00
+last_modified: 2025-04-03T17:15:15+07:00
 tags:
   - programming
   - javascript
-  - belajar_javascript
-  - catatan_belajar
-  - javascript_pemula
-  - belajar_programming
   - web_development
   - front_end
-thumbnail: 
+  - looping
+  - perulangan
+categories:
+  - Programing
+  - Javascript
+grouping:
+  - 📚 Learning
 pinned: false
-draft: false
 mathjax: false
+draft: false
 ---
-Looping (perulangan) di JavaScript digunakan untuk menjalankan kode yang sama berulang kali selama suatu kondisi masih bernilai true. Ada beberapa jenis looping utama di JavaScript:
+
+Perulangan (Looping) di JavaScript digunakan untuk menjalankan kode yang sama berulang kali selama suatu kondisi masih bernilai true. Ada beberapa jenis looping utama di JavaScript
+
 ## for (Perulangan dengan Penghitung)
+
 Digunakan ketika jumlah perulangan sudah diketahui.
-Format Dasar:
+
+**Format Dasar**:
+
 ```javascript
 for (inisialisasi; kondisi; perubahan) {
   // kode yang akan dijalankan
 }
 ```
-Contoh:
+
+**Contoh**:
+
 ```javascript
 for (let i = 1; i <= 5; i++) {
   console.log("Iterasi ke-" + i);
@@ -42,15 +48,21 @@ for (let i = 1; i <= 5; i++) {
 // Iterasi ke-4
 // Iterasi ke-5
 ```
+
 ## while (Perulangan dengan Kondisi)
+
 Digunakan ketika jumlah perulangan tidak diketahui pasti dan bergantung pada kondisi tertentu.
-Format Dasar:
+
+**Format Dasar**:
+
 ```javascript
 while (kondisi) {
   // kode yang akan dijalankan
 }
 ```
-Contoh:
+
+**Contoh**:
+
 ```javascript
 let j = 1;
 while (j <= 5) {
@@ -59,15 +71,21 @@ while (j <= 5) {
 }
 // Output: Sama seperti `for` di atas
 ```
+
 ## do...while (Minimal Satu Kali Perulangan)
+
 Mirip dengan while, tetapi dijalankan minimal satu kali, karena kondisi diperiksa setelah kode dieksekusi.
-Format Dasar:
+
+**Format Dasar**:
+
 ```javascript
 do {
   // kode yang akan dijalankan
 } while (kondisi);
 ```
-Contoh:
+
+**Contoh**:
+
 ```javascript
 let k = 1;
 do {
@@ -75,11 +93,16 @@ do {
   k++;
 } while (k <= 5);
 ```
-Perbedaan utama:
+
+**Perbedaan utama**:
 - Jika k = 10, while tidak akan berjalan karena kondisi langsung false. Tetapi do...while tetap berjalan sekali, lalu berhenti.
+
 ## for...in (Looping untuk Objek)
+
 Digunakan untuk mengulang properti dalam objek.
-Contoh:
+
+**Contoh**:
+
 ```javascript
 const person = { name: "Alice", age: 25, job: "Programmer" };
 for (let key in person) {
@@ -90,9 +113,13 @@ for (let key in person) {
 // age: 25
 // job: Programmer
 ```
+
 ## for...of (Looping untuk Array/String)
+
 Digunakan untuk mengulang nilai dalam array atau string.
-Contoh:
+
+**Contoh**:
+
 ```javascript
 let angka = [10, 20, 30, 40];
 for (let num of angka) {
@@ -104,7 +131,9 @@ for (let num of angka) {
 // 30
 // 40
 ```
-Untuk string:
+
+**Untuk string**:
+
 ```javascript
 for (let huruf of "Hello") {
   console.log(huruf);
@@ -116,10 +145,14 @@ for (let huruf of "Hello") {
 // l
 // o
 ```
+
 ## break dan continue (Mengontrol Perulangan)
-- break: Menghentikan perulangan sepenuhnya.
-- continue: Melewati iterasi saat ini dan lanjut ke iterasi berikutnya.
-Contoh break:
+
+- `break`: Menghentikan perulangan sepenuhnya.
+- `continue`: Melewati iterasi saat ini dan lanjut ke iterasi berikutnya.
+
+**Contoh break**:
+
 ```javascript
 for (let i = 1; i <= 10; i++) {
   if (i === 5) {
@@ -129,7 +162,9 @@ for (let i = 1; i <= 10; i++) {
 }
 // Output: 1, 2, 3, 4
 ```
-Contoh continue:
+
+**Contoh continue**:
+
 ```javascript
 for (let i = 1; i <= 5; i++) {
   if (i === 3) {

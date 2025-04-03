@@ -1,28 +1,28 @@
 ---
-title: "Operator"
-date: 2025-02-20T02:45:00+07:00
-last_modified: 2025-02-20T02:45:00+07:00
-description: "Catatan belajar JavaScript Operator"
-excerpt: "Catatan belajar atau ringkasan tentang JavaScript Operator."
-categories:
-  - Programing
-  - Javascript
+title: Operator
+image: https://placehold.co/1080x520
+description: "Catatan belajar atau ringkasan tentang JavaScript Operator."
+date: 2025-04-03T17:36:00+07:00
+last_modified: 2025-04-03T17:36:00+07:00
 tags:
-  - programming
   - javascript
-  - belajar_javascript
-  - catatan_belajar
-  - javascript_pemula
-  - belajar_programming
+  - programming
   - web_development
-  - front_end
-thumbnail: 
+  - development
+  - operator
+categories:
+  - Javascript
+grouping:
+  - 📚 Learning
 pinned: false
-draft: false
 mathjax: false
+draft: false
 ---
+
 ## Operator di JavaScript
-Operator digunakan untuk melakukan operasi pada nilai atau variabel.
+
+Operator digunakan untuk melakukan operasi pada nilai atau [variabel](variabel).
+
 ### Operator Aritmatika (untuk perhitungan)
 
 | Operator | Fungsi              | Contoh (`x = 10, y = 5`) |
@@ -33,7 +33,8 @@ Operator digunakan untuk melakukan operasi pada nilai atau variabel.
 | `/`      | Pembagian           | `x / y = 2`              |
 | `%`      | Modulus (sisa bagi) | `x % y = 0`              |
 
-Contoh:
+**Contoh**:
+
 ```javascript
 let a = 10;
 let b = 3;
@@ -52,14 +53,16 @@ console.log(a % b); // Output: 1
 | `>`      | Lebih besar                       | `x > y` → `true`         |
 | `<`      | Lebih kecil                       | `x < y` → `false`        |
 
-Contoh:
+**Contoh**:
+
 ```javascript
 let angka = 10;
 console.log(angka == "10");  // true (tidak cek tipe)
 console.log(angka === "10"); // false (cek tipe)
 ```
 
-### Operator Logika (digunakan dalam kondisi `if`)
+### Operator Logika (digunakan dalam [kondisi](kondisi-if-else) `if`)
+
 Dalam JavaScript, **AND (`&&`), OR (`||`), dan NOT (`!`)** adalah operator logika yang digunakan untuk menggabungkan atau membalik nilai boolean (true/false)
 
 | Operator | Fungsi                                            | Contoh            |
@@ -68,7 +71,8 @@ Dalam JavaScript, **AND (`&&`), OR (`||`), dan NOT (`!`)** adalah operator logik
 | \|\|     | **OR**  (jika salah satu operand bernilai `true`) | (5 \|\| "5")      |
 | !        | **NOT** (Membalikkan nilai)                       | !(x < 5)          |
 
-Contoh:
+**Contoh**:
+
 ```javascript
 let umur = 20;
 console.log(umur > 18 && umur < 30); // true
@@ -77,9 +81,11 @@ console.log(!true); // false
 ```
 
 #### AND (`&&`)
+
 Operator **AND (`&&`)** akan menghasilkan `true` jika **kedua operand (kiri dan kanan)** bernilai `true`. Jika salah satu bernilai `false`, hasilnya `false`.
 
-Sintaks:
+**Sintaks**:
+
 ```javascript
 A && B
 ```
@@ -89,7 +95,8 @@ A && B
 - Jika **A = false** dan **B = true** → hasilnya `false`
 - Jika **A = false** dan **B = false** → hasilnya `false`
 
-Contoh:
+**Contoh**:
+
 ```javascript
 console.log(true && true);  // true
 console.log(true && false); // false
@@ -106,7 +113,8 @@ console.log(umur >= 18 && memilikiSIM); // true (karena umur cukup & punya SIM)
 #### OR (`||`)
 Operator **OR (`||`)** akan menghasilkan `true` jika **salah satu operand bernilai `true`**. Hanya akan menghasilkan `false` jika **kedua operand bernilai `false`**.
 
-Sintaks:
+**Sintaks**:
+
 ```javascript
 A || B
 ```
@@ -116,7 +124,8 @@ A || B
 - Jika **A = false** dan **B = true** → hasilnya `true`
 - Jika **A = false** dan **B = false** → hasilnya `false`
 
-Contoh:
+**Contoh**:
+
 ```javascript
 console.log(true || true);  // true
 console.log(true || false); // true
@@ -131,16 +140,19 @@ console.log(punyaKTP || punyaPaspor); // true (karena setidaknya punya Paspor)
 ---
 
 #### NOT (`!`)
+
 Operator **NOT (`!`)** digunakan untuk membalik nilai boolean.
 - Jika nilai **true**, maka hasilnya `false`.
 - Jika nilai **false**, maka hasilnya `true`.
 
-Sintaks:
+**Sintaks**:
+
 ```javascript
 !A
 ```
 
-Contoh:
+**Contoh**:
+
 ```javascript
 console.log(!true);  // false
 console.log(!false); // true
@@ -151,7 +163,7 @@ console.log(!hujan); // false (karena hujan = true, lalu dibalik jadi false)
 
 ---
 
-#### Contoh Penggunaan dalam Kondisi
+#### Contoh Penggunaan dalam [Kondisi](kondisi-if-else)
 
 ```javascript
 let cuaca = "cerah";
