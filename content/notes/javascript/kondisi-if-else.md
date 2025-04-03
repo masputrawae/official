@@ -24,7 +24,7 @@ draft: false
 Di JavaScript, kondisi digunakan untuk menjalankan kode berdasarkan suatu pernyataan benar (true) atau salah (false). Ada beberapa cara menulis kondisi, yaitu menggunakan if, else if, else, switch, serta ternary operator.
 
 ## if
-(Percabangan Sederhana, Digunakan untuk menjalankan kode jika kondisi bernilai true.
+Percabangan Sederhana, Digunakan untuk menjalankan kode jika kondisi bernilai true.
 
 ```javascript
 let angka = 10;
