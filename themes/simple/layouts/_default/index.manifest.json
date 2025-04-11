@@ -1,0 +1,52 @@
+{
+    "name": "{{ site.Title }}",
+    "short_name": "{{ site.Title }}",
+    "start_url": "{{ site.BaseURL | absURL }}",
+    "display": "standalone",
+    "description": "{{ site.Params.description }}",
+    "lang": "{{ site.Language.LanguageCode }}",
+    "dir": "auto",
+    "background_color": "#ffffff",
+    "theme_color": "#007bff",
+    "orientation": "any",
+    "display_override": ["fullscreen", "minimal-ui"],
+    "icons": [
+        {
+            "src": "{{ "favicons/android-chrome-512x512.png" | absURL }}",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "{{ "favicons/android-chrome-192x192.png" | absURL }}",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "{{ "favicons/favicon-16x16.png" | absURL }}",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "{{ "favicons/favicon-32x32.png" | absURL }}",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "{{ "favicons/screen-desktop.png" | absURL }}",
+            "sizes": "988x568",
+            "type": "image/png",
+            "description": "{{ site.Params.description }}",
+            "form_factor": "wide"
+        },
+        {
+            "src": "{{ "favicons/screen-mobile.png" | absURL }}",
+            "sizes": "320x682",
+            "type": "image/png",
+            "description": "{{ site.Params.description }}"
+        }
+    ]
+}

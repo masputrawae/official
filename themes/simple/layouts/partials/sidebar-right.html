@@ -1,0 +1,19 @@
+{{/* =============== START: SIDEBAR RIGHT =============== */}}
+<header class="u-container sidebar__header">
+  <div class="sidebar__wrapper">
+    <button class="btn btn--icon" data-toggle-sidebar="sidebarRight" aria-label="{{ i18n "btn_toc" }}" title="{{ i18n "btn_toc" }}" >
+      <i class="bi bi-chevron-double-right"></i>
+    </button>
+    
+    <strong class="navbar__label">{{ i18n "toc" }}</strong>
+  </div>
+</header>
+
+<nav class="u-container navbar">
+  {{ $toc := .TableOfContents }}
+  {{ $toc := replaceRE `<ul>` `<ul class="nav">` $toc }}
+  {{ $toc := replaceRE `<li>` `<li class="nav__item">` $toc }}
+  {{ $toc := replaceRE `<a href=` `<a class="nav__link nav__link--toc" href=` $toc }}
+  {{ $toc | safeHTML }}
+</nav>
+{{/* =============== END: SIDEBAR RIGHT =============== */}}

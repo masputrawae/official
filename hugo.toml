@@ -1,0 +1,141 @@
+#====================================#
+#=========== BASE SETTING ===========#
+title                           = "My Notes"
+baseURL                         = "https://masputrawae.github.io/official/"
+theme                           = "simple"
+defaultContentLanguage          = 'id'
+enableEmoji                     = true
+capitalizeListTitles            = false
+defaultContentLanguageInSubdir  = false
+disableDefaultLanguageRedirect  = false
+i18nDir = "i18n"
+
+#====================================#
+#========== PARAMS SETTING ==========#
+[params]
+  author        = "Putra Jaya"
+  subtitle      = "🤖 Ngoding? Bisa. Paham? Nanti dulu. 🎨 CSS magician, tapi kadang kena kutukan sendiri. 🐛 Bug adalah sahabat, debugger adalah penyelamat."
+  logo          = "logo/logo.webp"
+  twitter       = "@Masputrawae"
+  toc_exclude_sections = ["documents", "notes", "posts", "projects"]
+
+[permalinks]
+  posts = "/:sections/:year/:month/:day/:title/"
+  notes = "/:sections/:year/:month/:day/:title/"
+  documents = "/:sections/:year/:month/:day/:title/"
+  projects = "/:sections/:year/:month/:day/:title/"
+
+#====================================#
+#======== TAXONOMIES SETTING ========#
+[taxonomies]
+  category  = "categories"
+  tag       = "tags"
+  status    = "status"
+  group     = "grouping"
+  series    = "series"
+
+[languages]
+#=================================================#
+#=================== INDONESIA ===================#
+  [languages.id]
+    languageCode    = "id"
+    languageName    = "Bahasa Indonesia"
+    weight          = 1
+    contentDir      = "content/"
+
+    [languages.id.params]
+      dateFormat          = "Senin, 2 Januari 2006"
+      description         = "Website ini untuk menyimpan catatan pribadi saya tentang pengembangan web dan hal-hal menarik lainnya. Website ini terus berkembang seiring dengan eksperimen dan pembelajaran baru yang saya coba. Konten bisa berubah-ubah tergantung minat dan hal yang saya pelajari."
+#=================================================#
+#==================== ENGLISH ====================#
+  [languages.en]
+    languageCode    = "en"
+    languageName    = "English"
+    weight          = 2
+    contentDir      = "content/en/"
+
+    [languages.en.params]
+      dateFormat          = "Monday, January 2, 2006"
+      description         = "This website is for storing my personal notes about web development and other interesting things. This website is constantly evolving along with new experiments and learnings that I try. Content may change depending on my interests and what I learn."
+#=================================================#
+#===================== JAWA ======================#
+  [languages.jv]
+    languageCode    = "jv"
+    languageName    = "Javanese"
+    weight          = 3
+    contentDir      = "content/jv/"
+    
+    [languages.jv.params]
+      dateFormat          = "Senin, 2 Januari 2006"
+      description         = "Situs web iki kanggo nyimpen cathetan pribadi babagan pangembangan web lan barang-barang menarik liyane. Situs web iki terus berkembang nalika aku nyoba lan sinau babagan anyar. Isi bisa beda-beda gumantung saka kapentingan lan apa sing aku sinau."
+
+#====================================#
+#============== MARKUP ==============#
+[markup]
+  [markup.tableOfContents]
+    endLevel    = 6
+    ordered     = false
+    startLevel  = 2
+
+  [markup.highlight]
+    codeFences          = true
+    guessSyntax         = true
+    style               = "github-dark"
+    noClasses           = false
+    lineNumbersInTable  = false
+    lineNos             = false
+    anchorLineNos       = false
+    lineAnchors         = ''
+    lineNoStart         = 1
+    tabWidth            = 4
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe    = true
+
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+#====================================#
+#============== OUTPUT ==============#
+[mediaTypes]
+  [mediaTypes."application/json"]
+    suffixes = ["json"]
+
+[outputFormats]
+
+  [outputFormats.search]
+    mediaType       = "application/json"
+    baseName        = "search"
+    isPlainText     = true
+    notAlternative  = true
+    
+  [outputFormats.manifest]
+    mediaType       = "application/json"
+    baseName        = "manifest"
+    isPlainText     = true
+    notAlternative  = true
+
+[outputs]
+  home = ["HTML", "search", "manifest", 'rss']
+  section = ['html', 'rss']
+  
+[services]
+  [services.rss]
+    limit = 42
+
+#====================================#
+#============ PAGINATION ============#
+[pagination]
+  disableAliases = false
+  pagerSize = 6
+
+#====================================#
+#============== MODULE ==============#
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.145.0"

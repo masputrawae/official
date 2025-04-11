@@ -1,0 +1,82 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/breakpoints' as b;
+@use '../abstracts/variables' as v;
+
+.brand {
+  text-decoration: none;
+  font-family: v.$font__family--serif;
+  font-size: v.$font__size--9xl;
+  font-weight: 600;
+  color: var(--cl-primary);
+}
+
+.sidebar {
+  @include m.width-height(0px, 100dvh);
+  @include m.transition(transform, visibility, opacity);
+
+  background-color: var(--bg-primary);
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+
+  &__header {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-primary);
+    z-index: 200;
+  }
+
+  &__wrapper {
+    @include m.flex-between;
+    gap: 0.5rem;
+    padding-block: 0.25rem;
+  }
+
+  &--left {
+    order: 0;
+    transform: translateX(-100%);
+    border-right: 1px solid var(--cl-border);
+
+    @include b.max(md){
+      left: 0;
+    }
+  }
+
+  &--right {
+    order: 2;
+    transform: translateX(100%);
+  }
+
+  &.is-open {
+    width: 280px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  @include b.max(md){
+    position: fixed;
+    width: 360px;
+    max-width: 100%;
+    padding-bottom: 4.5rem;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+
+    &.is-open {
+      width: 360px;
+      max-width: 100%;
+    }
+  }
+}

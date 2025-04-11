@@ -1,0 +1,8 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-primary) var(--bg-primary);
+
+  &:hover {
+    scrollbar-color: var(--cl-border) var(--bg-primary);
+  }
+}

@@ -1,0 +1,30 @@
+{{ define "main" }}
+<article class="content">
+  <h1 class="heading">{{ .Title | title }}</h1>
+  {{ partial "content.html" . }}
+
+  {{ if eq .Kind "term" }}
+    {{ range .Pages }}
+      <ul>
+        <li>
+          <a href="{{ .RelPermalink }}"><i class="bi bi-file-earmark-text"></i> {{ .LinkTitle }}</a>
+        </li>
+      </ul>
+    {{ end }}
+
+  {{ else }}
+    <h1 class="heading">{{ .Title | title }}</h1>
+    <div class="taxonomy">
+      {{ $taxonomy := .Data.Plural }}
+      {{ $terms := index .Site.Taxonomies $taxonomy }}
+      {{ $max := math.Max (len $terms) 1 }}
+      {{ range $term, $pages := $terms }}
+      {{ $size := div (len $pages) $max | mul 1 | add 1 }}
+        <a href="{{ .Page.RelPermalink }}" style="font-size: {{ $size }}em; margin: 0.25rem;" class="btn btn--text">
+          {{ .Page.Title }} ({{ len $pages }})
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+</article>
+{{ end }}

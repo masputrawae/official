@@ -1,0 +1,11 @@
+@use '../abstracts/dark' as dark;
+@use '../abstracts/light' as light;
+@use '../abstracts/mixins' as m;
+
+:root {
+  @include m.theme-vars(light.$light);
+
+  &[data-theme="dark"] {
+    @include m.theme-vars(dark.$dark);
+  }
+}

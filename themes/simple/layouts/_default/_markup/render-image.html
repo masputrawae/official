@@ -1,0 +1,13 @@
+{{- if .IsBlock -}}
+  <figure class="figure">
+    <img class="figure__image" loading="lazy" src="{{ .Destination | safeURL }}"
+      {{- with .PlainText }} alt="{{ . }}"{{ end -}}
+    >
+    {{- with .Title }}<figcaption class="figure__caption">{{ . }}</figcaption>{{ end -}}
+  </figure>
+{{- else -}}
+  <img class="figure__image figure__image--inline" loading="lazy" src="{{ .Destination | safeURL }}"
+    {{- with .PlainText }} alt="{{ . }}"{{ end -}}
+    {{- with .Title }} title="{{ . }}"{{ end -}}
+  >
+{{- end -}}

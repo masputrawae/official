@@ -1,0 +1,8 @@
+{{/* |===========| START: SWITCH LANGUAGE |===========| */}}
+{{ if gt (len $.Site.Home.AllTranslations) 1 }}
+  <strong class="btn btn--text">{{ i18n "select_language" }}</strong>
+  {{ range $.Site.Home.AllTranslations }}
+    <a href="{{ .RelPermalink }}" class="btn btn--text">{{ .Language.LanguageName }}</a>
+  {{ end }}
+{{ end }}
+{{/* |===========| END: SWITCH LANGUAGE |===========| */}}

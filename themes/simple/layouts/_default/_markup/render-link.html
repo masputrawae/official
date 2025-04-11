@@ -1,0 +1,20 @@
+{{ if and .Page (eq .Destination "internalwiki") }}
+  {{ $target := .Title | lower | urlize }}
+  {{ $page := or (.Page.GetPage $target) (.Page.Site.GetPage (printf "/%s" $target)) }}
+  {{ if $page }}
+    <a class="link link--internal" href="{{ $page.RelPermalink }}">
+      {{ .Text | safeHTML }}
+      <i class="bi bi-folder-symlink"></i>
+    </a>
+  {{ else }}
+    <a class="link link--missing" href="{{ $target }}">
+      {{ .Text | safeHTML }}
+      <i class="bi bi-exclamation-circle"></i>
+    </a>
+  {{ end }}
+{{ else }}
+  <a class="link link--external" href="{{ .Destination | safeURL }}" rel="external noopener noreferrer nofollow" target="_blank">
+    {{ .Text | safeHTML }}
+    <i class="bi bi-box-arrow-up-right"></i>
+  </a>
+{{ end }}

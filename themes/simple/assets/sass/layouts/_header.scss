@@ -1,0 +1,27 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/breakpoints' as b;
+@use '../abstracts/variables' as v;
+
+.header {
+  @include m.flex-center;
+  gap: 1rem;
+  flex-direction: column;
+
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 500;
+
+  @include b.max(md){
+    flex-direction: row;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+
+    .btn--icon {
+      @include m.width-height(3rem, 3rem);
+      border-color: var(--cl-border);
+    }
+  }
+}

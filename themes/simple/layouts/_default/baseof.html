@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}" data-theme="dark">
+<head>
+  {{ partial "head/head.html" . }}
+</head>
+<body class="layout">
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+  <aside class="u-container sidebar sidebar--left" data-sidebar="sidebarLeft">
+    {{ partial "sidebar-left.html" . }}
+  </aside>
+  
+  <div class="main-area">
+    <div class="markdown">
+
+      <header class="header">
+        {{ partial "header.html" . }}
+      </header>
+      <main class="u-container main">
+        {{ block "main" . }}{{ end }}
+      </main>
+      <footer class="u-container footer">
+        {{ partial "footer.html" . }}
+      </footer>
+      
+    </div>
+  </div>
+
+  {{ $excluded := .Site.Params.toc_exclude_sections | default (slice) }}
+  {{ $showToc := and (.TableOfContents) (not (in $excluded .Section)) }}
+  {{ if not (or (eq .Params.toc false) (not $showToc)) }}
+    <aside class="u-container sidebar sidebar--right" data-sidebar="sidebarRight">
+      {{ partial "sidebar-right.html" . }}
+    </aside>
+  {{ end }}
+
+  {{ if .Store.Get "hasMermaid" }}
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  {{ end }}
+
+</body>
+</html>

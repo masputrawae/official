@@ -1,0 +1,13 @@
+[
+    {{- range where .Site.Pages "Kind" "page" -}}
+    {
+        "id": "{{ .Permalink }}",
+        "title": "{{ .Title }}",
+        "content": {{ .Summary | plainify | jsonify }},
+		"description": {{ .Params.description | plainify | jsonify }},
+        "url": "{{ .Permalink }}",
+        "tags": [{{ range $index, $tag := .Params.Tags }}{{ if $index }}, {{ end }}"{{ $tag }}"{{ end }}],
+        "category": "{{ .Params.categories }}"
+    }{{- if not (eq .Permalink (index (where .Site.Pages "Kind" "page") (sub (len (where .Site.Pages "Kind" "page")) 1) ).Permalink) -}},{{ end }}
+    {{- end -}}
+]

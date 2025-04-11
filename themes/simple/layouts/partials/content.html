@@ -1,0 +1,15 @@
+{{ $content := .RawContent }}
+
+{{/* Tangani eksternal dengan label (misalnya: [[https://...|Label]]) */}}
+{{ $content = replaceRE `\[\[(https?://[^\|\]]+)\|([^\]]+)\]\]` `[$2]($1)` $content }}
+
+{{/* Tangani eksternal tanpa label */}}
+{{ $content = replaceRE `\[\[(https?://[^\]]+)\]\]` `[$1]($1)` $content }}
+
+{{/* Tangani internal dengan label */}}
+{{ $content = replaceRE `\[\[([^\|\]]+)\|([^\]]+)\]\]` `[$2](internalwiki "$1")` $content }}
+
+{{/* Tangani internal tanpa label */}}
+{{ $content = replaceRE `\[\[([^\]]+)\]\]` `[$1](internalwiki "$1")` $content }}
+
+{{ .RenderString $content }}

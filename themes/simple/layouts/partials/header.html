@@ -1,0 +1,25 @@
+{{/* =============== START: HEADER =============== */}}
+<button class="btn btn--icon" data-toggle-sidebar="sidebarLeft" aria-label="{{ i18n "btn_sidebar_left" }}" title="{{ i18n "btn_sidebar_left" }}" data-button-hidden="true">
+  <i class="bi bi-list"></i>
+</button>
+
+<button class="btn btn--icon" onclick="window.location.href='{{ site.BaseURL | relLangURL }}'" aria-label="{{ site.Title }}">
+  <i class="bi bi-house"></i>
+</button>
+
+<button class="btn btn--icon" id="switchTheme" aria-label="{{ i18n "btn_switch_theme" }}" title="{{ i18n "btn_switch_theme" }}">
+  <i class="bi bi-sun"></i>
+</button>
+
+<button id="backToTop" class="btn btn--icon btn--back-to-top" aria-label="{{ i18n "btn_back_to_top" }}" title="{{ i18n "btn_back_to_top" }}">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+{{ $excluded := .Site.Params.toc_exclude_sections | default (slice) }}
+{{ $showToc := and (.TableOfContents) (not (in $excluded .Section)) }}
+{{ if not (or (eq .Params.toc false) (not $showToc)) }}
+  <button class="btn btn--icon" data-toggle-sidebar="sidebarRight" aria-label="{{ i18n "btn_toc" }}" title="{{ i18n "btn_toc" }}" data-button-hidden="true">
+    <i class="bi bi-book"></i>
+  </button>
+{{ end }}
+{{/* =============== END: HEADER =============== */}}

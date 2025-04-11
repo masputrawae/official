@@ -1,0 +1,79 @@
+$bootstrap-icons-font: "bootstrap-icons" !default;
+$bootstrap-icons-font-dir: "../fonts" !default;
+$bootstrap-icons-font-file: "#{$bootstrap-icons-font-dir}/#{$bootstrap-icons-font}" !default;
+$bootstrap-icons-font-src: url("#{$bootstrap-icons-font-file}.woff2?")
+    format("woff2"),
+  url("#{$bootstrap-icons-font-file}.woff?") format("woff") !default;
+
+@font-face {
+  font-display: swap;
+  font-family: $bootstrap-icons-font;
+  src: $bootstrap-icons-font-src;
+}
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: $bootstrap-icons-font !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$bootstrap-icons-map: (
+  "link-45deg": "\F470",
+  "folder-symlink": "\F3D5",
+  "exclamation-circle": "\F333",
+  "box-arrow-up-right": "\F1C5",
+  "list": "\F479",
+  "house": "\F425",
+  "sun": "\F5A2",
+  "arrow-up": "\F148",
+  "book": "\F194",
+  "chevron-double-left": "\F27F",
+  "chevron-double-right": "\F280",
+  "folder2": "\F3D9",
+  "folder2-open": "\F3D8", 
+  "file-earmark-text": "\F38B",
+  "x": "\F62A",
+  "x-lg": "\F659",
+  "circle-half": "\F288",
+  "moon-stars-fill": "\F495",
+
+  // CALLOUT / ALERT ICONS
+  "journal-text": "\F444",
+  "layers": "\F45B",
+  "info-circle": "\F431",
+  "ui-checks-grid": "\F5F8",
+  "lightbulb": "\F46B",
+  "check2-circle": "\F270",
+  "check-circle": "\F26B",
+  "patch-check": "\F4B6",
+  "question-lg": "\F64E",
+  "life-preserver": "\F467",
+  "chat-left-text": "\F252",
+  "exclamation-diamond": "\F335",
+  "shield-exclamation": "\F530",
+  "eye": "\F341",
+  "x-octagon": "\F627",
+  "arrow-down-circle": "\F119",
+  "search": "\F52A",
+  "lightning-fill": "\F46E",
+  "slash-circle": "\F567",
+  "bug-fill": "\F1DB",
+  "file-earmark-code": "\F362",
+  "quote": "\F6B0",
+  "chat-quote": "\F255",
+);
+
+@each $icon, $codepoint in $bootstrap-icons-map {
+  .bi-#{$icon}::before {
+    content: $codepoint;
+  }
+}

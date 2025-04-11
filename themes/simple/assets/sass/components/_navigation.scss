@@ -1,0 +1,69 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/breakpoints" as b;
+@use "../abstracts/variables" as v;
+
+.navbar{
+  &__label {
+    font-size: v.$font__size--5xl;
+    font-family: v.$font__family--serif;
+  }
+}
+.nav {
+  list-style: none;
+  padding-left: 0.25rem;
+
+  .nav {
+    margin-left: 0.75rem;
+    border-left: 1px solid var(--cl-border);
+  }
+
+  &__link {
+    @include m.transition(color);
+    
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: var(--cl-text);
+    font-family: v.$font__family--serif;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    width: 100%;
+
+
+    &--folder {
+      font-size: v.$font__size--lg;
+    }
+
+    &--file {
+      position: relative;
+      color: var(--cl-nav-link);
+
+      &:is(.nav__link--active, :hover, :focus-visible)::before {
+        content: "";
+        position: absolute;
+        left: -6px;
+        width: 1px;
+        height: 100%;
+      }
+      
+      &.nav__link--active::before {
+        background-color: var(--cl-primary);
+      }
+
+      &:is(:hover, :focus-visible)::before{
+        background-color: var(--cl-text);
+      }
+    }
+
+    &:hover {
+      color: var(--cl-heading);
+    } 
+
+    &--active {
+      color: var(--cl-primary);
+    }
+  }
+}

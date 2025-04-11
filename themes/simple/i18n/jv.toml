@@ -1,0 +1,62 @@
+[home]
+other = "Kaca ngarep"
+
+[error_404]
+other = "Nuwun sewu, kaca sing panjenengan goleki ora ditemokake. Bisa wae wis dipindhah utawa pranalané ora bener. Mangga bali menyang:"
+
+[btn_sidebar_left]
+other = "Tampilna/Sumputna Navigasi Samping"
+
+[btn_switch_theme]
+other = "Genti Téma"
+
+[btn_back_to_top]
+other = "Mundur Menyang Ndhuwur"
+
+[btn_toc]
+other = "Tampilna/Sumputna Dhaftar Isi"
+
+[properties]
+other = "Pratélan"
+
+[title]
+other = "Irah-irahan"
+
+[author]
+other = "Pangripta"
+
+[description]
+other = "Panjelasan"
+
+[date]
+other = "Tanggal"
+
+[last_modified]
+other = "Pungkasan Diedit"
+
+[search]
+other = "Golèk..."
+
+[directory]
+other = "Direktori"
+
+[toc]
+other = "Dhaftar Isi"
+
+[select_language]
+other = "Pilih Basa:"
+
+[english]
+other = "Basa Inggris"
+
+[indonesian]
+other = "Basa Indonesia"
+
+[javanese]
+other = "Basa Jawa"
+
+[footer_credit]
+other = "Digawe nganggo ❤️ nganggo"
+
+[footer_copyright]
+other = "Kabèh hak dilindhungi."

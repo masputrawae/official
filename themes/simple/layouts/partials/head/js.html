@@ -1,0 +1,53 @@
+<script src="{{ "js/lunr.min.js" | relURL }}" defer></script>
+{{ if .Params.mathjax }}
+  {{ partial "mathjax.html" . }}
+{{ end }}
+{{/* |===========| START: SW JS |===========| */}}
+{{- with resources.Get "js/sw.js" }}
+  {{- if eq hugo.Environment "development" }}
+    {{- with . | js.Build | resources.Copy "sw.js" }}
+    <script defer>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('{{ .RelPermalink }}').then(reg => {
+                    console.log('Service worker registered with scope: ', reg.scope);
+                }).catch(err => {
+                    console.log('Service worker registration failed: ', err);
+                });
+            });
+        }
+      </script>
+    {{- end }}
+  {{- else }}
+    {{- $opts := dict "minify" true }}
+    {{- with . | js.Build $opts | resources.Copy "js/sw.js" }}
+    <script defer>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('{{ .RelPermalink }}').then(reg => {
+                    console.log('Service worker registered with scope: ', reg.scope);
+                }).catch(err => {
+                    console.log('Service worker registration failed: ', err);
+                });
+            });
+        }
+      </script>
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{/* |===========| END: SW JS |===========| */}}
+
+{{/* |===========| START: MAIN.JS |===========| */}}
+{{- with resources.Get "js/main.js" }}
+  {{- if eq hugo.Environment "development" }}
+    {{- with . | js.Build }}
+      <script src="{{ .RelPermalink }}" defer></script>
+    {{- end }}
+  {{- else }}
+    {{- $opts := dict "minify" true }}
+    {{- with . | js.Build $opts | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous" defer></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{/* |===========| END: MAIN.JS |===========| */}}

@@ -1,0 +1,42 @@
+//==============================================//
+//==============// FLEX JUSTIFY //==============//
+@mixin flex-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//==============================================//
+//===============// THEMES VAR //===============//
+@mixin theme-vars($map) {
+  @each $key, $value in $map {
+    --#{$key}: #{$value};
+  }
+}
+
+//==============================================//
+//===============// TRANSITION //===============//
+@mixin width-height($width, $height){
+  width: $width;
+  height: $height;
+}
+
+//==============================================//
+//===============// TRANSITION //===============//
+@mixin transition($properties...) {
+  transition: $properties, 0.3s ease-in-out;
+}
+
+///==============================================//
+//==============// TEXT ELLIPSIS //==============//
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

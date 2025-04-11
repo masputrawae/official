@@ -9,14 +9,17 @@ tags:
 categories:  
   - Halaman 
 ---
-![Alt Text](/official/favicons/android-chrome-192x192.png "left")
 ## Halo, saya Putra! 👋  
+
+![Alt Text](/official/favicons/android-chrome-192x192.png)
+
 Saya adalah seseorang yang selalu ingin belajar dan mengeksplorasi berbagai hal. Minat saya mencakup banyak bidang, mulai dari teknologi, pemrograman, seni, musik, sejarah, konspirasi, filsafat, puisi, hingga pengembangan diri. Saya percaya bahwa belajar adalah perjalanan tanpa akhir, dan saya menikmati setiap prosesnya.
 
 Saat ini, saya sedang menempuh kejar paket setara SMP. Meskipun pendidikan formal saya masih dalam proses, saya tidak membatasi diri untuk terus berkembang. Dengan memanfaatkan internet, komunitas, serta eksplorasi mandiri, saya telah banyak mendalami teknologi, terutama web development. Saya senang membangun sesuatu dari awal, mencari solusi atas masalah teknis, serta berbagi ilmu dengan orang lain.  
 
-> [!quote] Filosofi hidup saya sederhana  
-> *Kerjakan hal yang kamu cintai, selama itu memiliki makna bagi dirimu sendiri. Jika bisa bermanfaat bagi orang lain, itu adalah bonus.*  
+> Filosofi hidup saya sederhana
+> *Kerjakan hal yang kamu cintai, selama itu memiliki makna bagi dirimu sendiri. Jika bisa bermanfaat bagi orang lain, itu adalah bonus.*
+{caption="Filosofi hidup" source="Putra Jaya" cite="https://masputrawae.github.io/official/documents/2025/04/02/tentang-saya/"}
 
 Prinsip ini menjadi landasan saya untuk terus berusaha, belajar, dan berkarya. Saya yakin bahwa setiap langkah kecil dalam belajar dan berkreasi akan membawa perubahan positif, sekecil apa pun itu.
 Jika ingin terhubung atau berdiskusi lebih lanjut, silakan hubungi saya melalui:  

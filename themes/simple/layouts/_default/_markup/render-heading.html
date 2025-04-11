@@ -1,0 +1,6 @@
+<h{{ .Level }} id="{{ .Anchor }}" {{- with .Attributes.class }} class="heading {{ . }}" {{- else }} class="heading" {{- end }}>
+  {{ .Text }}
+  <a href="#{{ .Anchor }}" class="heading__anchor" aria-label="{{ .Text }}" title="{{ .Text }}">
+    <i class="bi bi-link-45deg"></i>
+  </a>
+</h{{ .Level }}>

@@ -24,5 +24,5 @@ Di sini, Anda akan menemukan:
 Saya percaya bahwa berbagi ilmu dan pengalaman adalah cara terbaik untuk terus berkembang. Jadi, jangan ragu untuk menjelajahi konten yang ada, dan jika ada sesuatu yang menarik perhatian Anda, mari berdiskusi lebih lanjut!  
 
 🚀 **Mulai Jelajahi:**  
-- 📖 [Tentang Saya](documents/about/)  
-- 📂 [Semua Artikel](/posts/)
+- 📖 [[/documents/about/|Tentang Saya]]
+- 📂 [[/posts/|Semua Artikel]]

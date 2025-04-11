@@ -1,0 +1,62 @@
+[home]
+other = "Home page"
+
+[error_404]
+other = "Sorry, the page you are looking for was not found. It may have been moved or the link is invalid. Please return to:"
+
+[btn_sidebar_left]
+other = "Toggle Sidebar Navigation"
+
+[btn_switch_theme]
+other = "Toggle Theme"
+
+[btn_back_to_top]
+other = "Back to Top"
+
+[btn_toc]
+other = "Toggle Table of Contents"
+
+[properties]
+other = "Properties"
+
+[title]
+other = "Title"
+
+[author]
+other = "Author"
+
+[description]
+other = "Description"
+
+[date]
+other = "Date"
+
+[last_modified]
+other = "Last Modified"
+
+[search]
+other = "Search..."
+
+[directory]
+other = "Directory"
+
+[toc]
+other = "Table of Contents"
+
+[select_language]
+other = "Select Language:"
+
+[english]
+other = "English"
+
+[indonesian]
+other = "Indonesian"
+
+[javanese]
+other = "Javanese"
+
+[footer_credit]
+other = "Made with ❤️ using"
+
+[footer_copyright]
+other = "All rights reserved."

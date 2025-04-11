@@ -1,0 +1,62 @@
+[home]
+other = "Beranda"
+
+[error_404]
+other = "Maaf, halaman yang Anda cari tidak ditemukan. Mungkin telah dipindahkan atau tautannya tidak valid. Silakan kembali ke:"
+
+[btn_sidebar_left]
+other = "Tampilkan/Sembunyikan Navigasi Samping"
+
+[btn_switch_theme]
+other = "Ganti Tema"
+
+[btn_back_to_top]
+other = "Kembali ke Atas"
+
+[btn_toc]
+other = "Tampilkan/Sembunyikan Daftar Isi"
+
+[properties]
+other = "Properti"
+
+[title]
+other = "Judul"
+
+[author]
+other = "Penulis"
+
+[description]
+other = "Deskripsi"
+
+[date]
+other = "Tanggal"
+
+[last_modified]
+other = "Terakhir Diubah"
+
+[search]
+other = "Cari..."
+
+[directory]
+other = "Direktori"
+
+[toc]
+other = "Daftar Isi"
+
+[select_language]
+other = "Pilih Bahasa:"
+
+[english]
+other = "Bahasa Inggris"
+
+[indonesian]
+other = "Bahasa Indonesia"
+
+[javanese]
+other = "Bahasa Jawa"
+
+[footer_credit]
+other = "Dibuat dengan ❤️ menggunakan"
+
+[footer_copyright]
+other = "Seluruh hak cipta dilindungi."

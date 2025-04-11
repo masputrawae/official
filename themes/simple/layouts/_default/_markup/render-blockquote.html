@@ -1,0 +1,71 @@
+{{ $icons := dict
+  "note" "bi-journal-text"
+  "abstract" "bi-layers"
+  "info" "bi-info-circle"
+  "todo" "bi-ui-checks-grid"
+  "tip" "bi-lightbulb"
+  "success" "bi-check2-circle"
+  "check" "bi-check-circle"
+  "done" "bi-patch-check"
+  "question" "bi-question-lg"
+  "help" "bi-life-preserver"
+  "faq" "bi-chat-left-text"
+  "warning" "bi-exclamation-diamond"
+  "caution" "bi-shield-exclamation"
+  "attention" "bi-eye"
+  "failure" "bi-x-octagon"
+  "fall" "bi-arrow-down-circle"
+  "missing" "bi-search"
+  "danger" "bi-lightning-fill"
+  "error" "bi-slash-circle"
+  "bug" "bi-bug-fill"
+  "example" "bi-file-earmark-code"
+  "quote" "bi-quote"
+  "cite" "bi-chat-quote"
+}}
+
+{{ $icon := index $icons .AlertType }}
+
+{{ if eq .Type "alert" }}
+  <blockquote class="alert alert--{{ .AlertType }}">
+    <strong class="alert__header">
+      <i class="bi {{ $icon }}"></i>
+      {{ with .AlertTitle }}
+        <span class="alert__title">{{ . }}</span>
+      {{ else }}
+        {{ or (i18n .AlertType) (title .AlertType) }}
+      {{ end }}
+    </strong>
+    <div class="alert__content">
+      {{ .Text }}
+    </div>
+  </blockquote>
+{{ else }}
+<figure class="blockquote">
+  <blockquote class="blockquote__text" {{ with .Attributes.cite }}cite="{{ . }}"{{ end }}>
+    {{ .Text }}
+  </blockquote>
+
+  {{ if or (.Attributes.caption) (.Attributes.source) (.Attributes.cite) }}
+    <figcaption class="blockquote__caption">
+      {{ with .Attributes.caption }}
+        <span class="blockquote__caption-text">{{ . | safeHTML }}</span>
+      {{ end }}
+
+      {{ if .Attributes.source }}
+        <span class="blockquote__source">
+          {{ if .Attributes.cite }}
+            &mdash; <a href="{{ .Attributes.cite }}" target="_blank" rel="noopener">{{ .Attributes.source }}</a>
+          {{ else }}
+            &mdash; {{ .Attributes.source }}
+          {{ end }}
+        </span>
+      {{ else if .Attributes.cite }}
+        <span class="blockquote__cite">
+          &mdash; <a href="{{ .Attributes.cite }}" target="_blank" rel="noopener">{{ .Attributes.cite }}</a>
+        </span>
+      {{ end }}
+    </figcaption>
+  {{ end }}
+</figure>
+{{ end }}
